@@ -98,23 +98,7 @@ public class StandardTestRun extends AbstractTestRun {
         this.orbiproData = loadDataSeriesFile(getReferenceFileName(), getReferenceLabel(), false);
 
         // create the special charts
-        createSpecialCharts(orekitStates, orbiproData, getOrekitLabel(), getReferenceLabel());
-        
-        if (this.getParser().containsKey(ParameterKey.ATMOSPHERE_OUTPUT) && this.getParser().getBoolean(ParameterKey.ATMOSPHERE_OUTPUT)){
-        	// save atmosphere data for each state
-            processDensity(orekitStates, new File(getOutputFolder(), getTestName() + "_Density.out"));
-        }
-        
-        if (this.getParser().containsKey(ParameterKey.ATMOSPHERE_DRAG_OUTPUT) && this.getParser().getBoolean(ParameterKey.ATMOSPHERE_DRAG_OUTPUT)){
-        	// save atmosphere data for each state
-            processDragForce(orekitStates, new File(getOutputFolder(), getTestName() + "_Orekit_DragForce.out"));
-        }
-        
-        if (this.getParser().containsKey(ParameterKey.SRP_FORCE_OUTPUT) && this.getParser().getBoolean(ParameterKey.SRP_FORCE_OUTPUT)){
-        	// save atmosphere data for each state
-            processSRPForce(orekitStates, new File(getOutputFolder(), getTestName() + "_Orekit_SRPForce.out"));
-        }        
-        
+        createSpecialCharts(orekitStates, orbiproData, getOrekitLabel(), getReferenceLabel());                      
         
     }
     
