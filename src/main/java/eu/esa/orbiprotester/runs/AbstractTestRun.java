@@ -79,6 +79,11 @@ import org.orekit.forces.gravity.potential.NormalizedSphericalHarmonicsProvider;
 import org.orekit.forces.gravity.potential.TideSystem;
 import org.orekit.forces.maneuvers.ConstantThrustManeuver;
 import org.orekit.forces.maneuvers.ImpulseManeuver;
+import org.orekit.forces.radiation.AbstractRadiationForceModel;
+import org.orekit.forces.radiation.InfraredContribution;
+import org.orekit.forces.radiation.IsotropicRadiationSingleCoefficient;
+import org.orekit.forces.radiation.RadiationSensitive;
+import org.orekit.forces.radiation.RadiationType;
 import org.orekit.forces.radiation.SolarRadiationPressure;
 import org.orekit.frames.Frame;
 import org.orekit.frames.FramesFactory;
@@ -111,6 +116,7 @@ import org.orekit.time.TimeScale;
 import org.orekit.time.TimeScalesFactory;
 import org.orekit.utils.AngularDerivativesFilter;
 import org.orekit.utils.Constants;
+import org.orekit.utils.ExtendedPVCoordinatesProvider;
 import org.orekit.utils.IERSConventions;
 import org.orekit.utils.PVCoordinates;
 import org.orekit.utils.TimeStampedAngularCoordinates;
@@ -896,6 +902,26 @@ public abstract class AbstractTestRun implements TestRun {
         	}
         }
             
+        // Infrared Radiation
+        
+        if(parser.containsKey(ParameterKey.INFRARED_RADIATION)) {
+        	
+        	final OneAxisEllipsoid earth  = new OneAxisEllipsoid(Constants.WGS84_EARTH_EQUATORIAL_RADIUS, 
+						                    Constants.WGS84_EARTH_FLATTENING, 
+						                    centralBodyShape.getBodyFrame());
+        	final double kR 			  = 0.7;
+        	final double surface 		  = 10.0;
+        	final RadiationSensitive sscs = new IsotropicRadiationSingleCoefficient(surface, kR);
+        	CelestialBody sun             = CelestialBodyFactory.getSun();
+        	
+        	AbstractRadiationForceModel infraredRadiation = new InfraredContribution(RadiationType.EARTH,
+        																			 earth, sscs,
+        																			 sun);
+        	
+        	
+        	numProp.addForceModel(infraredRadiation);
+        }
+        
         // TODO add the rest of perturbations
     }
 
