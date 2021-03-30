@@ -133,8 +133,9 @@ public class StandardTestRun extends AbstractTestRun {
             final Vector3D vAtm = atmosphere.getVelocity(date, position, frame);
             final Vector3D relativeVelocity = vAtm.subtract(s.getPVCoordinates().getVelocity());
             
+            //need parameters TODO
             final Vector3D dragForce = spacecraft.dragAcceleration(date, frame, position, s.getAttitude().getRotation(),
-                    s.getMass(), rho, relativeVelocity).scalarMultiply(s.getMass());
+                    s.getMass(), rho, relativeVelocity, null).scalarMultiply(s.getMass());
             
 // force is computed in dragForce
             buffer.write(date.toString());
@@ -185,8 +186,9 @@ public class StandardTestRun extends AbstractTestRun {
     	        final double   rawP = kRef * getLightingRatio(position, frame, date,Constants.WGS84_EARTH_EQUATORIAL_RADIUS,sun) / r2;
     	        final Vector3D flux = new Vector3D(rawP / FastMath.sqrt(r2), sunSatVector);
 
+    	        //need parameters TODO
     	        final Vector3D SRPforce = spacecraft.radiationPressureAcceleration(date, frame, position, s.getAttitude().getRotation(),
-    	                                                                               s.getMass(), flux).scalarMultiply(s.getMass());    		
+    	                                                                               s.getMass(), flux, null).scalarMultiply(s.getMass());    		
     	
             
     	        	// force is computed in dragForce
