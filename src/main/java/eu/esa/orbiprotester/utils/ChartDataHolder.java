@@ -35,14 +35,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.apache.commons.math3.analysis.differentiation.DerivativeStructure;
-import org.apache.commons.math3.geometry.euclidean.threed.CardanEulerSingularityException;
-import org.apache.commons.math3.geometry.euclidean.threed.Rotation;
-import org.apache.commons.math3.geometry.euclidean.threed.RotationConvention;
-import org.apache.commons.math3.geometry.euclidean.threed.RotationOrder;
-import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
-import org.apache.commons.math3.util.FastMath;
-import org.apache.commons.math3.util.MathUtils;
+import org.hipparchus.geometry.euclidean.threed.Rotation;
+import org.hipparchus.geometry.euclidean.threed.RotationConvention;
+import org.hipparchus.geometry.euclidean.threed.RotationOrder;
+import org.hipparchus.geometry.euclidean.threed.Vector3D;
+import org.hipparchus.util.FastMath;
+import org.hipparchus.util.MathUtils;
 import org.apache.log4j.Logger;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
@@ -76,8 +74,9 @@ import org.orekit.orbits.Orbit;
 import org.orekit.orbits.PositionAngle;
 import org.orekit.propagation.SpacecraftState;
 import org.orekit.time.AbsoluteDate;
-import org.orekit.time.TimeFunction;
+import org.orekit.time.TimeScalarFunction;
 import org.orekit.time.TimeScalesFactory;
+import org.orekit.time.TimeVectorFunction;
 import org.orekit.time.UT1Scale;
 import org.orekit.time.UTCScale;
 import org.orekit.utils.Constants;
@@ -221,7 +220,8 @@ public class ChartDataHolder {
 
         final IERSConventions conventions = IERSConventions.IERS_2010;
         final UT1Scale ut1 = TimeScalesFactory.getUT1(conventions, true);
-        final TimeFunction<DerivativeStructure> gmstfunction = conventions.getGMSTFunction(ut1);
+        //timescalar function from timefunction
+        final TimeScalarFunction gmstfunction = conventions.getGMSTFunction(ut1);
         final UTCScale utc = TimeScalesFactory.getUTC();
         //final Frame earthFrame = earth.getBodyFrame();
 
@@ -283,8 +283,9 @@ public class ChartDataHolder {
             series[ElementType.LM].add(time,  lm);
 
             // Local time of ascending node
-            final double t = o.getDate().getComponents(utc).getTime().getSecondsInDay();
-            final double gmst = gmstfunction.value(o.getDate()).getValue();
+            final double t = o.getDate().getComponents(utc).getTime().getSecondsInUTCDay();
+            //deleted get value
+            final double gmst = gmstfunction.value(o.getDate());
             final double sunAlpha = gmst + FastMath.PI * (1 - t / (Constants.JULIAN_DAY * 0.5));
             // angular offset between the two positions
             final double dAlpha = MathUtils.normalizeAngle(ko.getRightAscensionOfAscendingNode() - sunAlpha, 0);
@@ -353,7 +354,7 @@ public class ChartDataHolder {
             double[] angles;
             try {
             	angles = r.getAngles(RotationOrder.ZYX, RotationConvention.FRAME_TRANSFORM);
-            } catch (CardanEulerSingularityException ex) {
+            } catch (Exception ex) {
             	angles = new double[] {0, 0, 0};
             }
             
@@ -596,7 +597,7 @@ public class ChartDataHolder {
         
         final IERSConventions conventions = IERSConventions.IERS_2010;
         final UT1Scale ut1 = TimeScalesFactory.getUT1(conventions, true);
-        final TimeFunction<DerivativeStructure> gmstfunction = conventions.getGMSTFunction(ut1);
+        final TimeScalarFunction gmstfunction = conventions.getGMSTFunction(ut1);
         final UTCScale utc = TimeScalesFactory.getUTC();
         
         
@@ -660,7 +661,7 @@ public class ChartDataHolder {
                 double[] angles;
                 try {
                 	angles = r.getAngles(RotationOrder.ZYX, RotationConvention.FRAME_TRANSFORM);
-                } catch (CardanEulerSingularityException e) {
+                } catch (Exception e) {
                 	angles = new double[] {0, 0, 0};
                 }
                 
@@ -684,8 +685,8 @@ public class ChartDataHolder {
                 final double velZ = series[ElementType.VELOCITY_Z].getY(currentIndex).doubleValue() * 1000.;
                 
                 // Local time of ascending node
-                final double t = date.getComponents(utc).getTime().getSecondsInDay();
-                final double gmst = gmstfunction.value(date).getValue();
+                final double t = date.getComponents(utc).getTime().getSecondsInUTCDay();
+                final double gmst = gmstfunction.value(date);
                 final double sunAlpha = gmst + FastMath.PI * (1 - t / (Constants.JULIAN_DAY * 0.5));
                 // angular offset between the two positions
                 final double dAlpha = MathUtils.normalizeAngle(raan - sunAlpha, 0);

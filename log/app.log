@@ -1,0 +1,5 @@
+2021-03-30 14:52:47,857 INFO  OrbiproTesterLauncher,164 - No input folder specified! Using default folder ('./input').
+2021-03-30 14:52:47,859 INFO  OrbiproTesterLauncher,167 - No output folder specified! Using default folder ('./output').
+2021-03-30 14:52:47,859 INFO  OrbiproTesterLauncher,170 - No reference folder specified! Using default folder ('./matlab').
+2021-03-30 14:52:47,860 INFO  OrbiproTesterLauncher,219 - Starting tests for 2 input files!
+2021-03-30 14:52:47,861 INFO  OrbiproTesterLauncher,221 - Starting test for input file TC_WP3_005.in

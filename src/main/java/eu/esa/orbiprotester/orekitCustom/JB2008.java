@@ -16,17 +16,20 @@
  */
 package eu.esa.orbiprotester.orekitCustom;
 
-import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
-import org.apache.commons.math3.util.FastMath;
-import org.apache.commons.math3.util.MathUtils;
+import org.hipparchus.RealFieldElement;
+import org.hipparchus.geometry.euclidean.threed.FieldVector3D;
+import org.hipparchus.geometry.euclidean.threed.Vector3D;
+import org.hipparchus.util.FastMath;
+import org.hipparchus.util.MathUtils;
 import org.orekit.bodies.BodyShape;
 import org.orekit.bodies.GeodeticPoint;
 import org.orekit.errors.OrekitException;
 import org.orekit.errors.OrekitMessages;
-import org.orekit.forces.drag.Atmosphere;
+import org.orekit.models.earth.atmosphere.Atmosphere;
 import org.orekit.frames.Frame;
 import org.orekit.frames.Transform;
 import org.orekit.time.AbsoluteDate;
+import org.orekit.time.FieldAbsoluteDate;
 import org.orekit.utils.Constants;
 import org.orekit.utils.PVCoordinates;
 import org.orekit.utils.PVCoordinatesProvider;
@@ -716,13 +719,14 @@ public class JB2008 implements Atmosphere {
         return pvFrame.getVelocity();
 	}
 
-//    @Override
-//    public <T extends RealFieldElement<T>> T
-//        getDensity(final FieldAbsoluteDate<T> date, final FieldVector3D<T> position,
-//                   final Frame frame)
-//            throws OrekitException {
-//        // TODO: field implementation
-//        throw new UnsupportedOperationException();
-//    }
+	//uncomented
+    @Override
+    public <T extends RealFieldElement<T>> T
+        getDensity(final FieldAbsoluteDate<T> date, final FieldVector3D<T> position,
+                   final Frame frame)
+            throws OrekitException {
+        // TODO: field implementation
+        throw new UnsupportedOperationException();
+    }
 
 }

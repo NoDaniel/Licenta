@@ -33,6 +33,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 import org.orekit.errors.OrekitException;
 
+import eu.esa.orbiprotester.runs.StandardTestRun;
 import eu.esa.orbiprotester.runs.TestRun;
 import eu.esa.orbiprotester.runs.TestRunFactory;
 

@@ -24,8 +24,8 @@ import java.util.Formatter;
 import java.util.List;
 import java.util.Locale;
 
-import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
-import org.apache.commons.math3.util.FastMath;
+import org.hipparchus.geometry.euclidean.threed.Vector3D;
+import org.hipparchus.util.FastMath;
 import org.apache.log4j.Logger;
 import org.orekit.bodies.CelestialBody;
 import org.orekit.bodies.CelestialBodyFactory;
@@ -34,8 +34,7 @@ import org.orekit.bodies.OneAxisEllipsoid;
 import org.orekit.data.DataProvidersManager;
 import org.orekit.errors.OrekitException;
 import org.orekit.errors.OrekitMessages;
-import org.orekit.errors.PropagationException;
-import org.orekit.forces.drag.Atmosphere;
+import org.orekit.models.earth.atmosphere.Atmosphere;
 import org.orekit.frames.Frame;
 import org.orekit.orbits.Orbit;
 import org.orekit.propagation.SpacecraftState;
@@ -98,7 +97,8 @@ public class StandardTestRun extends AbstractTestRun {
         this.orbiproData = loadDataSeriesFile(getReferenceFileName(), getReferenceLabel(), false);
 
         // create the special charts
-        createSpecialCharts(orekitStates, orbiproData, getOrekitLabel(), getReferenceLabel());                      
+        createSpecialCharts(orekitStates, orbiproData, getOrekitLabel(), getReferenceLabel());
+                       
         
     }
     
@@ -305,7 +305,7 @@ public class StandardTestRun extends AbstractTestRun {
             final double numOn = System.currentTimeMillis();
             try {
                 numProp.propagate(getStart(), getStart().shiftedBy(getDuration()));
-            } catch (PropagationException ex) {
+            } catch (Exception ex) {
                 endInError = true;
                 getLogger().error(ex.getLocalizedMessage(), ex);
             }
