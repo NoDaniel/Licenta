@@ -1,0 +1,7 @@
+Copyright 2013 ESA/ESOC.
+
+The DSSTLauncher is a ESA/ESOC proprietary product.
+Unless otherwise stated in a dedicated agreement, it is not published.
+
+See the various Xxx-LICENSE.txt files and the NOTICE.txt file for the
+licenses of the free software products DSSTLauncher depends on.

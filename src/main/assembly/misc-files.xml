@@ -1,0 +1,31 @@
+<component>
+  <fileSets>
+    <fileSet>
+      <outputDirectory>/licenses</outputDirectory>  
+      <includes>
+       <include>LICENSE.txt</include>
+       <include>NOTICE.txt</include>
+       <include>Apache-Commons-Math-LICENSE.txt</include>
+       <include>Orekit-LICENSE.txt</include>
+       <include>Apache-Log4j-LICENSE.txt</include>
+       <include>JFreeChart-LICENSE.txt</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <outputDirectory>/orekit-data</outputDirectory>  
+      <directory>data/orekit-data</directory>  
+      <includes>
+       <include>*</include>
+       <include>*/*</include>
+       <include>*/*/*</include>
+      </includes>
+    </fileSet> <!--
+    <fileSet>
+      <outputDirectory>/input-data</outputDirectory>  
+      <directory>data/input-data</directory>  
+      <includes>
+       <include>*.in</include>
+      </includes>
+    </fileSet>     -->
+  </fileSets>
+</component>

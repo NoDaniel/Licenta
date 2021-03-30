@@ -1,0 +1,70 @@
+## Input file for TC_WP3_005: Impulse manoeuvre
+
+## The input file syntax is a set of key=value lines.
+## Blank lines and lines starting with '#' (after whitespace trimming) are
+## silently ignored.
+## The equal sign may be surrounded by space characters.
+
+timescale = UTC
+
+### Orbit definition
+## date of the orbital parameters (UTC)
+orbit.date = 2013-07-24T04:35:36.348
+
+### Keplerian elements
+## Semi-major axis (km)
+orbit.keplerian.a = 6944.68005365 
+## Eccentricity
+orbit.keplerian.e = 0.00222270824
+## Inclination (degrees)
+orbit.keplerian.i = 1.86438067644
+## Right Ascension of Ascending Node (degrees)
+orbit.keplerian.raan = 281.661404104
+## Perigee Argument (degrees)
+orbit.keplerian.pa = 230.123714157
+## Anomaly (degrees)
+orbit.keplerian.anomaly = 1.195159217
+
+### Angle type for anomaly, alpha or lambda (ECCENTRIC/MEAN/TRUE) [MEAN]
+orbit.angle.type = MEAN
+
+### Force models
+
+## Spacecraft mass (kg) [1000.]
+mass = 123.83
+
+## Central body mu
+central.body.mu = 3.986004415e+14
+
+
+### Simulation parameters
+## Start date (UTC) [orbit.date]
+start.date  = 2013-07-24T04:35:36.348
+## Duration (days)
+duration.in.days = 2
+
+## Time step between printed elements (seconds)
+output.step = 600.0
+
+## Time axis type (seconds/hours/days) [days]
+time.axis.type = days
+
+## The reference file
+orbipro.reference.file = TC_WP3_005_1_Orbipro.out
+
+## The orbit type used for propagation
+propagation.orbit.type = CARTESIAN
+
+## The Attitude
+#orbipro.attitude = NADIRPOINTING
+
+## The manoeuver
+impulse.manoeuver = true
+impulse.manoeuver.deltav.x = -10.0
+impulse.manoeuver.deltav.y = 1.0
+impulse.manoeuver.deltav.z = 0.1
+impulse.manoeuver.isp = 40.0
+
+## The manoeuver trigger
+orbipro.events.apside = true
+
