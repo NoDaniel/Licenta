@@ -14,27 +14,13 @@
 
 	<developers>
 		<developer>
-			<name>Lucian Barbulescu</name>
-			<id>lucian</id>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
-			</roles>
-		</developer>
-		<developer>
-			<name>Alin Butu</name>
-			<id>alin</id>
+			<name>Bouleanu Daniel</name>
+			<id>Daniel</id>
 			<roles>
 				<role>developer</role>
 			</roles>
 		</developer>
-		<developer>
-			<name>Madalin Mamuleanu</name>
-			<id>madalin</id>
-			<roles>
-				<role>developer</role>
-			</roles>
-		</developer>
+
 	</developers>
 
 	<organization>
@@ -46,14 +32,7 @@
 		<dependency>
 			<groupId>org.orekit</groupId>
 			<artifactId>orekit</artifactId>
-			<version>7.1</version>
-			<type>jar</type>
-			<optional>false</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-math3</artifactId>
-			<version>3.6</version>
+			<version>10.3</version>
 			<type>jar</type>
 			<optional>false</optional>
 		</dependency>
