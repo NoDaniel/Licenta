@@ -833,59 +833,7 @@ public abstract class AbstractTestRun implements TestRun {
             numProp.addForceModel(centralBody);
         }
 
-        // Ocean tides
-        if (parser.containsKey(ParameterKey.OCEAN_TIDES_DEGREE) && parser.containsKey(ParameterKey.OCEAN_TIDES_ORDER)) {
-        	final int oceanTidesDegree = parser.getInt(ParameterKey.OCEAN_TIDES_DEGREE);
-        	final int oceanTidesOrder = parser.getInt(ParameterKey.OCEAN_TIDES_ORDER);
-        	
-        	Frame centralBodyFrame = FramesFactory.getITRF(IERSConventions.IERS_2010, true);
-        	if (parser.containsKey(ParameterKey.OCEAN_TIDES_FRAME)) {
-        		centralBodyFrame = parser.getEarthFrame(ParameterKey.OCEAN_TIDES_FRAME);
-        	}
-        	
-        	boolean poleTide = false;
-        	if (parser.containsKey(ParameterKey.OCEAN_TIDES_POLES)) {
-        		poleTide = parser.getBoolean(ParameterKey.OCEAN_TIDES_POLES);
-        	}
-        	
-        	ForceModel oceanTides = new OceanTides(centralBodyFrame, this.ae, this.mu, poleTide, 
-        			OceanTides.DEFAULT_STEP, OceanTides.DEFAULT_POINTS, oceanTidesDegree, oceanTidesOrder, 
-        			IERSConventions.IERS_2010, TimeScalesFactory.getUT1(IERSConventions.IERS_2010, true));
-        	numProp.addForceModel(oceanTides);
-        }
-
-        // Solid tides
-        if (parser.containsKey(ParameterKey.SOLID_TIDES_BODIES)) {
-        	// get the bodies
-        	List<CelestialBody> bodies = this.parser.getCelectialBodies(ParameterKey.SOLID_TIDES_BODIES);
-        	
-        	// check if a normalized field already exists
-        	TideSystem ts = null;
-        	if (this.normalized != null) {
-        		ts = this.normalized.getTideSystem();
-        	} else {
-            	final int fieldDegree = parser.getInt(ParameterKey.SOLID_TIDES_DEGREE);
-            	final int fieldOrder = parser.getInt(ParameterKey.SOLID_TIDES_ORDER);
-            	
-            	ts = GravityFieldFactory.getNormalizedProvider(fieldDegree, fieldOrder).getTideSystem();
-        	}
-        	
-        	Frame centralBodyFrame = FramesFactory.getITRF(IERSConventions.IERS_2010, true);
-        	if (parser.containsKey(ParameterKey.SOLID_TIDES_FRAME)) {
-        		centralBodyFrame = parser.getEarthFrame(ParameterKey.SOLID_TIDES_FRAME);
-        	}
-        	
-        	boolean poleTide = false;
-        	if (parser.containsKey(ParameterKey.SOLID_TIDES_POLES)) {
-        		poleTide = parser.getBoolean(ParameterKey.SOLID_TIDES_POLES);
-        	}
-        	
-        	ForceModel solidTides = new SolidTides(centralBodyFrame, this.ae, this.mu, ts, poleTide, 
-        			OceanTides.DEFAULT_STEP, OceanTides.DEFAULT_POINTS,  
-        			IERSConventions.IERS_2010, TimeScalesFactory.getUT1(IERSConventions.IERS_2010, true),
-        			bodies.toArray(new CelestialBody[bodies.size()]));
-        	numProp.addForceModel(solidTides);
-        }
+       
         
         // Solar radiation pressure
         
@@ -949,71 +897,7 @@ public abstract class AbstractTestRun implements TestRun {
         		numProp.addForceModel(thirdBody);
         	}
         }
-        
-        // Check if continuous maneuver is selected
-        if (parser.containsKey(ParameterKey.CONSTANT_MANOEUVER) && 
-                parser.getBoolean(ParameterKey.CONSTANT_MANOEUVER)) {
-
-            // get the thrust maneuver parameters
-            final AbsoluteDate manStartDate = parser.getDate(ParameterKey.CONSTANT_MANOEUVER_STARTDATE, this.ts);
-            final AbsoluteDate manEndDate = parser.getDate(ParameterKey.CONSTANT_MANOEUVER_ENDDATE, this.ts);
             
-            final double thrust = parser.getDouble(ParameterKey.CONSTANT_MANOEUVER_THRUST);
-            final double isp = parser.getDouble(ParameterKey.CONSTANT_MANOEUVER_ISP);
-            
-            final Vector3D direction = parser.getVector(ParameterKey.CONSTANT_MANOEUVER_VECTOR_X, 
-                                                        ParameterKey.CONSTANT_MANOEUVER_VECTOR_Y,
-                                                        ParameterKey.CONSTANT_MANOEUVER_VECTOR_Z);
-            
-            ForceModel constantManeuver = new ConstantThrustManeuver(manStartDate, 
-                                                                     manEndDate.durationFrom(manStartDate), 
-                                                                     thrust,
-                                                                     isp,
-                                                                     direction);
-            numProp.addForceModel(constantManeuver);
-        }
-        
-        // Check if impulse maneuver is selected
-        if (parser.containsKey(ParameterKey.IMPULSE_MANOEUVER) && 
-                parser.getBoolean(ParameterKey.IMPULSE_MANOEUVER)) {
-            
-            // Get the maneuver trigger event
-            EventDetector trigger = getEventDetector(null);
-            
-            // Get the maneuver &Delta;V
-            Vector3D deltaVSat = parser.getVector(ParameterKey.IMPULSE_MANOEUVER_DELTAV_X, 
-                                               ParameterKey.IMPULSE_MANOEUVER_DELTAV_Y, 
-                                               ParameterKey.IMPULSE_MANOEUVER_DELTAV_Z);
-            
-            // Get the isp
-            double isp = parser.getDouble(ParameterKey.IMPULSE_MANOEUVER_ISP);
-            
-            
-            // Build the maneuver
-            ImpulseManeuver<EventDetector> im = new ImpulseManeuver<>(trigger, deltaVSat, isp);
-            
-            // Add it to the propagator
-            numProp.addEventDetector(im);
-        }
-        
-        // Check if variable maneuver is selected
-        if (parser.containsKey(ParameterKey.VARIABLE_MANOEUVER) && 
-                parser.getBoolean(ParameterKey.VARIABLE_MANOEUVER)) {
-
-            // get the file containing the maneuver
-            final String maneuverFileName = parser.getString(ParameterKey.VARIABLE_MANOEUVER_FILE);
-            
-            // Get the maneuver file
-            final File maneuverFile = new File(testFile.getParentFile(), maneuverFileName);
-            
-            // Get the engine isp
-            final double isp = parser.getDouble(ParameterKey.VARIABLE_MANOEUVER_ISP);
-            
-            // Parse the maneuver file and convert it to several constant maneuvers.
-            parseManeuverFile(maneuverFile, numProp, isp, INTERPOLATION_STEP);
-        }
-
-        
         // TODO add the rest of perturbations
     }
 
