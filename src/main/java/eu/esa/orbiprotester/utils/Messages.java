@@ -22,10 +22,10 @@ package eu.esa.orbiprotester.utils;
  */
 public interface Messages {
     /** Orekit data series label. */
-    String OREKIT_LABEL = "Orekit";
+    String OREKIT_LABEL = "Actual";
 
     /** Orbipro data series label. */
-    String ORBIPRO_LABEL = "Orbipro";
+    String ORBIPRO_LABEL = "Reference";
 
     /** Potential order cannot be higher than potential degree. */
     String ORDER_BIGGER_THAN_DEGREE = "Potential order cannot be higher than potential degree.";

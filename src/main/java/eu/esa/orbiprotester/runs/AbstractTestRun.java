@@ -904,16 +904,16 @@ public abstract class AbstractTestRun implements TestRun {
             
         // Infrared Radiation
         
-        if(parser.containsKey(ParameterKey.INFRARED_RADIATION)) {
+        if(parser.containsKey(ParameterKey.INFRARED_RADIATION) && parser.getBoolean(ParameterKey.INFRARED_RADIATION)) {       	
         	
         	final OneAxisEllipsoid earth  = new OneAxisEllipsoid(Constants.WGS84_EARTH_EQUATORIAL_RADIUS, 
-						                    Constants.WGS84_EARTH_FLATTENING, 
-						                    centralBodyShape.getBodyFrame());
-        	final double kR 			  = 0.7;
-        	final double surface 		  = 10.0;
-        	final RadiationSensitive sscs = new IsotropicRadiationSingleCoefficient(surface, kR);
-        	CelestialBody sun             = CelestialBodyFactory.getSun();
-        	
+											                     Constants.WGS84_EARTH_FLATTENING, 
+											                     centralBodyShape.getBodyFrame());
+			final double kR 			  = 0.7;
+			final double surface 		  = 10.0;
+			final RadiationSensitive sscs = new IsotropicRadiationSingleCoefficient(surface, kR);
+			CelestialBody sun             = CelestialBodyFactory.getSun();
+
         	AbstractRadiationForceModel infraredRadiation = new InfraredContribution(RadiationType.EARTH,
         																			 earth, sscs,
         																			 sun);

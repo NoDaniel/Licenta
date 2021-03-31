@@ -52,18 +52,14 @@ output.step = 600.0
 time.axis.type = days
 
 ## The reference file
-orbipro.reference.file = TC_WP3_005_Orbipro.out
+orbipro.reference.file = TC_WP3_005_Orekit.out
 
 ## The Attitude
 #orbipro.attitude = NADIRPOINTING
 
-## The manoeuver
-impulse.manoeuver = true
-impulse.manoeuver.deltav.x = -10.0
-impulse.manoeuver.deltav.y = 1.0
-impulse.manoeuver.deltav.z = 0.1
-impulse.manoeuver.isp = 40.0
+## Infrared contribution
+infrared.radiation = true
 
-## The manoeuver trigger
-orbipro.events.apside = true
+
+
 
