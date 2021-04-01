@@ -13,7 +13,7 @@ orbit.date = 2013-07-24T04:35:36.348
 
 ### Keplerian elements
 ## Semi-major axis (km)
-orbit.keplerian.a = 6944.68005365 
+orbit.keplerian.a = 6900.0
 ## Eccentricity
 orbit.keplerian.e = 0.00222270824
 ## Inclination (degrees)
@@ -31,7 +31,7 @@ orbit.angle.type = MEAN
 ### Force models
 
 ## Spacecraft mass (kg) [1000.]
-mass = 123.83
+mass = 4085.0
 
 ## Central body mu
 central.body.mu = 3.986004415e+14
@@ -59,7 +59,6 @@ orbipro.reference.file = TC_WP3_005_Orekit.out
 
 ## Infrared contribution
 infrared.radiation = true
-
 
 
 

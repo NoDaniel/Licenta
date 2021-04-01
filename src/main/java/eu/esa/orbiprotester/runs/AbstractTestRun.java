@@ -909,7 +909,7 @@ public abstract class AbstractTestRun implements TestRun {
         	final OneAxisEllipsoid earth  = new OneAxisEllipsoid(Constants.WGS84_EARTH_EQUATORIAL_RADIUS, 
 											                     Constants.WGS84_EARTH_FLATTENING, 
 											                     centralBodyShape.getBodyFrame());
-			final double kR 			  = 0.7;
+			final double kR 			  = 1;
 			final double surface 		  = 10.0;
 			final RadiationSensitive sscs = new IsotropicRadiationSingleCoefficient(surface, kR);
 			CelestialBody sun             = CelestialBodyFactory.getSun();

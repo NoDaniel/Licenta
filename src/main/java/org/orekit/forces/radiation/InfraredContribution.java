@@ -195,7 +195,7 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 		this.spacecraft = spacecraft;
 		this.sun = sun;
 		this.latituteDeg = latitudeDeg;
-		this.longitudeDeg =longitudeDeg;
+		this.longitudeDeg = longitudeDeg;
 		this.sx = Math.toDegrees(2 * Math.PI / this.longitudeDeg);
 		this.sy = Math.toDegrees(Math.PI / this.latituteDeg);
 		
@@ -276,7 +276,7 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 	 * @param SpaceCraft
 	 * @param parameters
 	 */
-	public Vector3D acceleration(SpacecraftState spaceCraft, double[] parameters) {
+	public Vector3D acceleration(final SpacecraftState spaceCraft, final double[] parameters) {
 		// TODO Auto-generated method stub
 		
 		final AbsoluteDate date         = spaceCraft.getDate();
@@ -309,11 +309,13 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 					}
 					double gridArea = computeArea(this.bodyShape.getEquatorialRadius(), i, this.sy, this.sx);
 					double satGridDistance = Vector3D.distance(position, gridCartesianPoint);
+					//double satGridDistance = Vector3D.distanceSq(position, gridCartesianPoint);
 					double Eincident = this.solarPressure * gridArea;
 					
-					flux = flux.add(emiss / (4 * Math.PI * Math.pow(satGridDistance, 2)*
+					flux = flux.add(emiss / (4 * Math.PI * Math.pow(satGridDistance, 2))*
 										  (Eincident * Math.cos(satGridAngle)) *
-										  position.subtract(gridCartesianPoint).getNorm()), new Vector3D(1, 1, 1));
+										  position.subtract(gridCartesianPoint).getNorm(), new Vector3D(1, 1, 1));
+					
 				}
 			}
 		}
@@ -321,7 +323,6 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 		
         Vector3D acceleration = spacecraft.radiationPressureAcceleration(date, frame, position, spaceCraft.getAttitude().getRotation(),
                 spaceCraft.getMass(), flux, parameters);
-       	
 		return acceleration;
 	}
 
@@ -359,7 +360,7 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 		double ux = 2 * Math.PI / sx;
 		double uy = Math.PI / sy;
 		
-		return - Math.PI / 2 + (i - 0.5) * uy; 
+		return (-1)*Math.PI / 2 + (i - 0.5) * uy; 
 	}
 	
 	/**
