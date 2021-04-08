@@ -23,7 +23,7 @@ import org.orekit.errors.OrekitException;
 
 /** Interface for tests.
  *
- * @author Lucian Barbulescu
+ * @author Bouleanu Daniel
  *
  */
 public interface TestRun {

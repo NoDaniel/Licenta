@@ -1,0 +1,1590 @@
+2021-04-06 13:26:30,090 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 13:26:30,092 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 13:26:30,092 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 13:26:30,094 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 13:26:30,094 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 13:26:31,070 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 13:28:19,305 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 108.233
+2021-04-06 13:28:19,308 INFO  OrbiproTesterLauncher,1283 - Saving Actual results to file .\output\2021-04-06_13-26-30-093\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:28:19,549 INFO  OrbiproTesterLauncher,1285 - Actual results saved as file .\output\2021-04-06_13-26-30-093\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:28:19,550 INFO  OrbiproTesterLauncher,1287 - Adding Actual data to chart.
+2021-04-06 13:28:19,627 INFO  OrbiproTesterLauncher,1289 - Actual data added to chart.
+2021-04-06 13:28:19,855 INFO  OrbiproTesterLauncher,1419 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 13:28:19,999 INFO  OrbiproTesterLauncher,1426 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 13:28:20,006 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 1091.002
+2021-04-06 13:28:20,006 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 1.515E-2%
+2021-04-06 13:28:20,007 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 1.125
+2021-04-06 13:28:20,008 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 1.511E-2%
+2021-04-06 13:28:20,008 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 13:28:20,011 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 13:28:20,011 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 13:28:20,012 INFO  OrbiproTesterLauncher,488 - Printing charts ...
+2021-04-06 13:28:20,492 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 1.615
+2021-04-06 13:28:20,492 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 2.243E-2%
+2021-04-06 13:28:20,835 INFO  OrbiproTesterLauncher,879 - Eccentricity: 5.399E-4
+2021-04-06 13:28:20,836 INFO  OrbiproTesterLauncher,890 - Eccentricity: 80.895%
+2021-04-06 13:28:20,925 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 5.099E-5°
+2021-04-06 13:28:20,926 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 5.167E-5%
+2021-04-06 13:28:21,007 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 0.006°
+2021-04-06 13:28:21,007 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 2.240E-3%
+2021-04-06 13:28:21,073 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 1.053°
+2021-04-06 13:28:21,073 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 1.885E0%
+2021-04-06 13:28:21,126 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 7.602°
+2021-04-06 13:28:21,126 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 2335.890%
+2021-04-06 13:28:21,193 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 8.655°
+2021-04-06 13:28:21,194 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 740.882%
+2021-04-06 13:28:21,256 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 1.059°
+2021-04-06 13:28:21,257 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 3.319E-1%
+2021-04-06 13:28:21,303 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 8.661°
+2021-04-06 13:28:21,303 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 4074.715%
+2021-04-06 13:28:21,366 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 3.557E-4
+2021-04-06 13:28:21,366 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 81.305%
+2021-04-06 13:28:21,412 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 4.062E-4
+2021-04-06 13:28:21,413 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 80.592%
+2021-04-06 13:28:21,455 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 1.520E-5
+2021-04-06 13:28:21,456 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 1.315E-3%
+2021-04-06 13:28:21,503 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 1.189E-4
+2021-04-06 13:28:21,503 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 8.587E-2%
+2021-04-06 13:28:21,551 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 8.661°
+2021-04-06 13:28:21,552 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 4074.715%
+2021-04-06 13:28:21,612 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 5.442
+2021-04-06 13:28:21,612 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 7.554E-2%
+2021-04-06 13:28:21,670 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 199.543
+2021-04-06 13:28:21,671 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 2989.819%
+2021-04-06 13:28:21,739 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 1076.063
+2021-04-06 13:28:21,739 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 6956.972%
+2021-04-06 13:28:21,805 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 1048.002
+2021-04-06 13:28:21,805 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 42461.199%
+2021-04-06 13:28:21,874 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 0.005
+2021-04-06 13:28:21,874 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 6.449E-2%
+2021-04-06 13:28:21,932 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 0.214
+2021-04-06 13:28:21,932 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 55149.060%
+2021-04-06 13:28:22,000 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 1.080
+2021-04-06 13:28:22,001 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 3971.592%
+2021-04-06 13:28:22,068 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 1.103
+2021-04-06 13:28:22,068 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 10154.055%
+2021-04-06 13:28:22,135 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 13:28:22,135 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 13:28:22,174 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:28:22,174 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:28:22,213 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:28:22,213 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:28:22,253 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:28:22,253 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:28:22,295 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 13:28:22,295 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 13:28:22,334 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 13:28:22,334 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 13:28:22,373 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 13:28:22,373 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 13:28:22,410 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 13:28:22,410 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 13:28:22,447 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 13:28:22,448 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 13:28:22,486 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 13:28:22,486 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 13:28:22,526 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 13:28:22,526 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 13:28:22,575 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 13:28:22,575 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 13:28:22,612 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 13:28:22,612 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 13:28:22,648 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 13:28:22,649 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 13:28:22,700 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 3.930E-4
+2021-04-06 13:28:22,701 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 1.888E-3%
+2021-04-06 13:28:22,741 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 2.274
+2021-04-06 13:28:22,741 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 2.783E-1%
+2021-04-06 13:28:22,781 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 5.501
+2021-04-06 13:28:22,781 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 6.653E-1%
+2021-04-06 13:28:22,906 INFO  OrbiproTesterLauncher,491 - Charts printed!
+2021-04-06 13:28:22,907 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 13:28:22,907 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 13:38:02,485 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 13:38:02,487 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 13:38:02,487 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 13:38:02,489 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 13:38:02,489 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 13:38:03,134 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 13:39:51,454 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 108.318
+2021-04-06 13:39:51,456 INFO  OrbiproTesterLauncher,1283 - Saving Actual results to file .\output\2021-04-06_13-38-02-488\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:39:51,681 INFO  OrbiproTesterLauncher,1285 - Actual results saved as file .\output\2021-04-06_13-38-02-488\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:39:51,681 INFO  OrbiproTesterLauncher,1287 - Adding Actual data to chart.
+2021-04-06 13:39:51,758 INFO  OrbiproTesterLauncher,1289 - Actual data added to chart.
+2021-04-06 13:39:51,759 INFO  OrbiproTesterLauncher,1419 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 13:39:51,849 INFO  OrbiproTesterLauncher,1426 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 13:39:51,857 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 54529.001
+2021-04-06 13:39:51,857 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 6.255E-1%
+2021-04-06 13:39:51,858 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 28.354
+2021-04-06 13:39:51,860 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 1.124E0%
+2021-04-06 13:39:51,860 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 13:39:51,865 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 13:39:51,866 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 13:39:51,866 INFO  OrbiproTesterLauncher,488 - Printing charts ...
+2021-04-06 13:39:52,198 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 17536.410
+2021-04-06 13:39:52,198 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 70.897%
+2021-04-06 13:39:52,534 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.948
+2021-04-06 13:39:52,535 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.987%
+2021-04-06 13:39:52,608 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 59.392°
+2021-04-06 13:39:52,608 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 37.570%
+2021-04-06 13:39:52,670 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 118.224°
+2021-04-06 13:39:52,670 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 5618809.929%
+2021-04-06 13:39:52,739 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 177.054°
+2021-04-06 13:39:52,740 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 2936.656%
+2021-04-06 13:39:52,799 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.845°
+2021-04-06 13:39:52,800 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 200190.774%
+2021-04-06 13:39:52,884 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.875°
+2021-04-06 13:39:52,884 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 13777.305%
+2021-04-06 13:39:52,958 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 179.936°
+2021-04-06 13:39:52,958 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5869.237%
+2021-04-06 13:39:53,007 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.962°
+2021-04-06 13:39:53,008 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 49689.952%
+2021-04-06 13:39:53,082 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.942
+2021-04-06 13:39:53,083 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 101.298%
+2021-04-06 13:39:53,140 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.943
+2021-04-06 13:39:53,140 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 117.454%
+2021-04-06 13:39:53,189 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 3.846
+2021-04-06 13:39:53,189 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 6740239.925%
+2021-04-06 13:39:53,241 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 2.944
+2021-04-06 13:39:53,241 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 17886.990%
+2021-04-06 13:39:53,288 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.962°
+2021-04-06 13:39:53,289 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 49689.952%
+2021-04-06 13:39:53,358 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 40620.117
+2021-04-06 13:39:53,358 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 454.957%
+2021-04-06 13:39:53,406 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 31087.614
+2021-04-06 13:39:53,406 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 9101.488%
+2021-04-06 13:39:53,459 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 34992.394
+2021-04-06 13:39:53,459 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 287044.727%
+2021-04-06 13:39:53,511 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 44139.239
+2021-04-06 13:39:53,511 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 18485.352%
+2021-04-06 13:39:53,564 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 17.020
+2021-04-06 13:39:53,565 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 985.738%
+2021-04-06 13:39:53,612 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 21.320
+2021-04-06 13:39:53,612 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 161786.810%
+2021-04-06 13:39:53,659 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 22.094
+2021-04-06 13:39:53,659 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 211144.492%
+2021-04-06 13:39:53,713 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 22.481
+2021-04-06 13:39:53,714 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 177961.275%
+2021-04-06 13:39:53,770 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 13:39:53,770 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 13:39:53,808 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:39:53,809 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:39:53,848 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:39:53,848 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:39:53,887 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:39:53,887 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:39:53,927 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 13:39:53,927 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 13:39:53,968 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 13:39:53,968 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 13:39:54,005 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 13:39:54,006 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 13:39:54,044 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 13:39:54,044 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 13:39:54,082 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 13:39:54,082 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 13:39:54,120 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 13:39:54,120 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 13:39:54,158 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 13:39:54,159 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 13:39:54,197 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 13:39:54,197 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 13:39:54,235 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 13:39:54,235 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 13:39:54,272 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 13:39:54,272 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 13:39:54,321 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 7.882
+2021-04-06 13:39:54,321 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 68740.066%
+2021-04-06 13:39:54,366 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 5928.274
+2021-04-06 13:39:54,366 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 11105.698%
+2021-04-06 13:39:54,409 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 40618.476
+2021-04-06 13:39:54,410 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 98.018%
+2021-04-06 13:39:54,554 INFO  OrbiproTesterLauncher,491 - Charts printed!
+2021-04-06 13:39:54,554 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 13:39:54,554 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 13:49:26,005 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 13:49:26,007 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 13:49:26,007 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 13:49:26,009 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 13:49:26,009 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 13:49:26,652 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 13:51:14,792 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 108.139
+2021-04-06 13:51:14,795 INFO  OrbiproTesterLauncher,1283 - Saving Actual results to file .\output\2021-04-06_13-49-26-008\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:51:15,046 INFO  OrbiproTesterLauncher,1285 - Actual results saved as file .\output\2021-04-06_13-49-26-008\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:51:15,046 INFO  OrbiproTesterLauncher,1287 - Adding Actual data to chart.
+2021-04-06 13:51:15,118 INFO  OrbiproTesterLauncher,1289 - Actual data added to chart.
+2021-04-06 13:51:15,118 INFO  OrbiproTesterLauncher,1419 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 13:51:15,227 INFO  OrbiproTesterLauncher,1426 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 13:51:15,233 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 21489.249
+2021-04-06 13:51:15,234 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 2.314E-1%
+2021-04-06 13:51:15,234 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 17.687
+2021-04-06 13:51:15,235 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 2.900E-1%
+2021-04-06 13:51:15,236 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 13:51:15,240 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 13:51:15,240 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 13:51:15,240 INFO  OrbiproTesterLauncher,488 - Printing charts ...
+2021-04-06 13:51:15,589 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 2685.593
+2021-04-06 13:51:15,590 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 27.171%
+2021-04-06 13:51:15,950 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.461
+2021-04-06 13:51:15,950 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.972%
+2021-04-06 13:51:16,029 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 1.161°
+2021-04-06 13:51:16,029 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 1.163E0%
+2021-04-06 13:51:16,110 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 2.866°
+2021-04-06 13:51:16,111 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 1.101E0%
+2021-04-06 13:51:16,192 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 14.319°
+2021-04-06 13:51:16,192 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 33.610%
+2021-04-06 13:51:16,251 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.971°
+2021-04-06 13:51:16,251 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 121774.908%
+2021-04-06 13:51:16,325 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.845°
+2021-04-06 13:51:16,326 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 25327.958%
+2021-04-06 13:51:16,395 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 14.323°
+2021-04-06 13:51:16,395 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 4.684E0%
+2021-04-06 13:51:16,439 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.661°
+2021-04-06 13:51:16,439 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 80024.237%
+2021-04-06 13:51:16,509 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.322
+2021-04-06 13:51:16,510 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.975%
+2021-04-06 13:51:16,554 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.330
+2021-04-06 13:51:16,555 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.970%
+2021-04-06 13:51:16,597 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.016
+2021-04-06 13:51:16,597 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 1.326E0%
+2021-04-06 13:51:16,640 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.062
+2021-04-06 13:51:16,640 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 30.822%
+2021-04-06 13:51:16,684 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.661°
+2021-04-06 13:51:16,684 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 80024.237%
+2021-04-06 13:51:16,751 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 7130.796
+2021-04-06 13:51:16,751 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 49.767%
+2021-04-06 13:51:16,804 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 4761.480
+2021-04-06 13:51:16,804 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 42176.731%
+2021-04-06 13:51:16,875 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 18164.112
+2021-04-06 13:51:16,875 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 7803.808%
+2021-04-06 13:51:16,945 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 19639.058
+2021-04-06 13:51:16,945 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 55091.207%
+2021-04-06 13:51:17,016 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 3.548
+2021-04-06 13:51:17,016 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 91.112%
+2021-04-06 13:51:17,071 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 3.132
+2021-04-06 13:51:17,071 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 799368.285%
+2021-04-06 13:51:17,142 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 16.841
+2021-04-06 13:51:17,142 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 21238.006%
+2021-04-06 13:51:17,211 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 15.796
+2021-04-06 13:51:17,211 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 298156.232%
+2021-04-06 13:51:17,513 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 13:51:17,513 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 13:51:17,574 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:51:17,575 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:51:17,615 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:51:17,615 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:51:17,654 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:51:17,654 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:51:17,694 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 13:51:17,694 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 13:51:17,733 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 13:51:17,733 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 13:51:17,776 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 13:51:17,776 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 13:51:17,823 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 13:51:17,823 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 13:51:17,861 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 13:51:17,861 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 13:51:17,899 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 13:51:17,899 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 13:51:17,938 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 13:51:17,939 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 13:51:17,977 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 13:51:17,977 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 13:51:18,015 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 13:51:18,016 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 13:51:18,053 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 13:51:18,053 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 13:51:18,091 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.191
+2021-04-06 13:51:18,091 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 9.259E-1%
+2021-04-06 13:51:18,142 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 1872.073
+2021-04-06 13:51:18,142 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 1553099.762%
+2021-04-06 13:51:18,197 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 7243.259
+2021-04-06 13:51:18,197 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 89.816%
+2021-04-06 13:51:18,330 INFO  OrbiproTesterLauncher,491 - Charts printed!
+2021-04-06 13:51:18,330 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 13:51:18,330 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 13:56:08,927 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 13:56:08,929 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 13:56:08,929 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 13:56:08,930 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 13:56:08,931 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 13:56:09,535 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 13:57:50,383 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 100.846
+2021-04-06 13:57:50,384 INFO  OrbiproTesterLauncher,1283 - Saving Actual results to file .\output\2021-04-06_13-56-08-930\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:57:50,614 INFO  OrbiproTesterLauncher,1285 - Actual results saved as file .\output\2021-04-06_13-56-08-930\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 13:57:50,615 INFO  OrbiproTesterLauncher,1287 - Adding Actual data to chart.
+2021-04-06 13:57:50,685 INFO  OrbiproTesterLauncher,1289 - Actual data added to chart.
+2021-04-06 13:57:50,685 INFO  OrbiproTesterLauncher,1419 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 13:57:50,781 INFO  OrbiproTesterLauncher,1426 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 13:57:50,788 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 30325.050
+2021-04-06 13:57:50,788 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 3.127E-1%
+2021-04-06 13:57:50,789 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 21.595
+2021-04-06 13:57:50,790 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 4.702E-1%
+2021-04-06 13:57:50,790 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 13:57:50,793 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 13:57:50,794 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 13:57:50,794 INFO  OrbiproTesterLauncher,488 - Printing charts ...
+2021-04-06 13:57:51,122 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 6240.449
+2021-04-06 13:57:51,122 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 46.436%
+2021-04-06 13:57:51,464 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.780
+2021-04-06 13:57:51,464 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.984%
+2021-04-06 13:57:51,534 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 7.620°
+2021-04-06 13:57:51,534 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 7.167E0%
+2021-04-06 13:57:51,600 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 3.789°
+2021-04-06 13:57:51,600 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 1.419E0%
+2021-04-06 13:57:51,664 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 16.971°
+2021-04-06 13:57:51,664 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 42.479%
+2021-04-06 13:57:51,722 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.918°
+2021-04-06 13:57:51,723 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 86945.368%
+2021-04-06 13:57:51,794 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.851°
+2021-04-06 13:57:51,795 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 26675.853%
+2021-04-06 13:57:51,865 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 16.981°
+2021-04-06 13:57:51,865 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5.602E0%
+2021-04-06 13:57:51,909 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.924°
+2021-04-06 13:57:51,909 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 18907.999%
+2021-04-06 13:57:51,979 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.480
+2021-04-06 13:57:51,979 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.983%
+2021-04-06 13:57:52,023 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.616
+2021-04-06 13:57:52,023 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.984%
+2021-04-06 13:57:52,066 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.176
+2021-04-06 13:57:52,066 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 13.238%
+2021-04-06 13:57:52,108 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.068
+2021-04-06 13:57:52,108 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 95.912%
+2021-04-06 13:57:52,151 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.924°
+2021-04-06 13:57:52,151 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 18907.999%
+2021-04-06 13:57:52,218 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 16497.286
+2021-04-06 13:57:52,218 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 139.856%
+2021-04-06 13:57:52,277 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 7502.829
+2021-04-06 13:57:52,277 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 23163.066%
+2021-04-06 13:57:52,332 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 22353.215
+2021-04-06 13:57:52,332 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 100688.208%
+2021-04-06 13:57:52,395 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 26090.227
+2021-04-06 13:57:52,395 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 16757.591%
+2021-04-06 13:57:52,453 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 7.908
+2021-04-06 13:57:52,453 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 283.865%
+2021-04-06 13:57:52,503 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 4.251
+2021-04-06 13:57:52,503 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 249119.997%
+2021-04-06 13:57:52,564 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 20.416
+2021-04-06 13:57:52,564 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 128918.675%
+2021-04-06 13:57:52,626 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 18.011
+2021-04-06 13:57:52,627 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 63979.485%
+2021-04-06 13:57:52,691 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 13:57:52,691 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 13:57:52,730 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:57:52,730 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:57:52,935 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:57:52,935 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:57:52,975 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 13:57:52,975 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 13:57:53,014 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 13:57:53,014 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 13:57:53,053 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 13:57:53,053 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 13:57:53,090 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 13:57:53,091 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 13:57:53,129 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 13:57:53,129 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 13:57:53,167 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 13:57:53,167 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 13:57:53,205 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 13:57:53,205 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 13:57:53,246 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 13:57:53,246 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 13:57:53,285 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 13:57:53,285 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 13:57:53,323 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 13:57:53,323 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 13:57:53,360 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 13:57:53,361 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 13:57:53,412 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.253
+2021-04-06 13:57:53,412 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 1.199E0%
+2021-04-06 13:57:53,453 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 4244.425
+2021-04-06 13:57:53,453 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 107390.309%
+2021-04-06 13:57:53,492 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 16725.324
+2021-04-06 13:57:53,492 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 95.320%
+2021-04-06 13:57:53,622 INFO  OrbiproTesterLauncher,491 - Charts printed!
+2021-04-06 13:57:53,622 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 13:57:53,622 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:06:56,987 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:06:56,989 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:06:56,989 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:06:56,990 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:06:56,990 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:06:57,584 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:08:39,161 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 101.576
+2021-04-06 14:08:39,163 INFO  OrbiproTesterLauncher,1285 - Saving Actual results to file .\output\2021-04-06_14-06-56-990\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:08:39,385 INFO  OrbiproTesterLauncher,1287 - Actual results saved as file .\output\2021-04-06_14-06-56-990\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:08:39,385 INFO  OrbiproTesterLauncher,1289 - Adding Actual data to chart.
+2021-04-06 14:08:39,466 INFO  OrbiproTesterLauncher,1291 - Actual data added to chart.
+2021-04-06 14:08:39,467 INFO  OrbiproTesterLauncher,1421 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:08:39,563 INFO  OrbiproTesterLauncher,1428 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:08:39,570 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 40502.582
+2021-04-06 14:08:39,570 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 6.167E-1%
+2021-04-06 14:08:39,570 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 28.238
+2021-04-06 14:08:39,573 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 8.448E-1%
+2021-04-06 14:08:39,574 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:08:39,577 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:08:39,578 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:08:39,578 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:08:39,930 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 10183.302
+2021-04-06 14:08:39,931 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 58.586%
+2021-04-06 14:08:40,483 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.926
+2021-04-06 14:08:40,483 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.986%
+2021-04-06 14:08:40,552 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 30.585°
+2021-04-06 14:08:40,552 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 23.659%
+2021-04-06 14:08:40,610 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 96.339°
+2021-04-06 14:08:40,610 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 26.797%
+2021-04-06 14:08:40,671 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 50.282°
+2021-04-06 14:08:40,671 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 47.321%
+2021-04-06 14:08:40,731 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.797°
+2021-04-06 14:08:40,731 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 347892.975%
+2021-04-06 14:08:40,804 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.924°
+2021-04-06 14:08:40,804 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 31353.790%
+2021-04-06 14:08:40,875 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 146.621°
+2021-04-06 14:08:40,875 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 42664.209%
+2021-04-06 14:08:40,924 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.937°
+2021-04-06 14:08:40,924 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 112579.787%
+2021-04-06 14:08:40,996 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.903
+2021-04-06 14:08:40,996 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 105.457%
+2021-04-06 14:08:41,042 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.917
+2021-04-06 14:08:41,042 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 137.269%
+2021-04-06 14:08:41,088 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 1.140
+2021-04-06 14:08:41,089 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 6926.026%
+2021-04-06 14:08:41,134 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 2.148
+2021-04-06 14:08:41,135 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 45120.779%
+2021-04-06 14:08:41,179 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.937°
+2021-04-06 14:08:41,180 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 112579.787%
+2021-04-06 14:08:41,248 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 26278.682
+2021-04-06 14:08:41,248 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 458.966%
+2021-04-06 14:08:41,300 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 14193.674
+2021-04-06 14:08:41,300 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 250474.983%
+2021-04-06 14:08:41,359 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 26715.670
+2021-04-06 14:08:41,359 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 11802.200%
+2021-04-06 14:08:41,418 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 32863.870
+2021-04-06 14:08:41,418 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 89881.769%
+2021-04-06 14:08:41,479 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 16.973
+2021-04-06 14:08:41,479 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 692.657%
+2021-04-06 14:08:41,526 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 22.420
+2021-04-06 14:08:41,526 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 105890.644%
+2021-04-06 14:08:41,611 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 25.180
+2021-04-06 14:08:41,611 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 82719.716%
+2021-04-06 14:08:41,670 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 20.938
+2021-04-06 14:08:41,670 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 259937.708%
+2021-04-06 14:08:41,731 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:08:41,731 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:08:41,775 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:08:41,775 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:08:41,816 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:08:41,816 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:08:41,866 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:08:41,867 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:08:41,908 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:08:41,908 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:08:41,947 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:08:41,947 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:08:41,986 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:08:41,986 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:08:42,025 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:08:42,025 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:08:42,064 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:08:42,065 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:08:42,107 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:08:42,107 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:08:42,147 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:08:42,147 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:08:42,187 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:08:42,188 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:08:42,225 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:08:42,226 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:08:42,266 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:08:42,266 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:08:42,322 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 6.423
+2021-04-06 14:08:42,322 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 40409.273%
+2021-04-06 14:08:42,366 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 5910.929
+2021-04-06 14:08:42,367 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 437136.062%
+2021-04-06 14:08:42,408 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 26277.531
+2021-04-06 14:08:42,408 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 96.969%
+2021-04-06 14:08:42,543 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:08:42,544 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:08:42,544 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:12:15,929 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:12:15,932 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:12:15,932 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:12:15,934 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:12:15,934 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:12:16,555 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:13:56,611 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 100.055
+2021-04-06 14:13:56,613 INFO  OrbiproTesterLauncher,1285 - Saving Actual results to file .\output\2021-04-06_14-12-15-933\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:13:56,825 INFO  OrbiproTesterLauncher,1287 - Actual results saved as file .\output\2021-04-06_14-12-15-933\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:13:56,825 INFO  OrbiproTesterLauncher,1289 - Adding Actual data to chart.
+2021-04-06 14:13:56,902 INFO  OrbiproTesterLauncher,1291 - Actual data added to chart.
+2021-04-06 14:13:56,902 INFO  OrbiproTesterLauncher,1421 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:13:56,989 INFO  OrbiproTesterLauncher,1428 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:13:56,996 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 45074.759
+2021-04-06 14:13:56,996 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 4.497E-1%
+2021-04-06 14:13:56,996 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 24.539
+2021-04-06 14:13:56,998 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 8.842E-1%
+2021-04-06 14:13:56,998 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:13:57,001 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:13:57,001 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:13:57,001 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:13:57,313 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 12975.056
+2021-04-06 14:13:57,313 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 64.317%
+2021-04-06 14:13:57,650 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.936
+2021-04-06 14:13:57,650 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.986%
+2021-04-06 14:13:57,724 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 70.475°
+2021-04-06 14:13:57,725 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 41.661%
+2021-04-06 14:13:57,786 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 118.159°
+2021-04-06 14:13:57,786 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 316513.123%
+2021-04-06 14:13:57,847 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 179.875°
+2021-04-06 14:13:57,848 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 2251.513%
+2021-04-06 14:13:57,907 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.899°
+2021-04-06 14:13:57,908 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 377099.563%
+2021-04-06 14:13:57,986 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.892°
+2021-04-06 14:13:57,986 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 400411.635%
+2021-04-06 14:13:58,056 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 179.998°
+2021-04-06 14:13:58,056 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 74090.881%
+2021-04-06 14:13:58,102 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.932°
+2021-04-06 14:13:58,103 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 2036706.544%
+2021-04-06 14:13:58,172 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.926
+2021-04-06 14:13:58,173 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 161.628%
+2021-04-06 14:13:58,217 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.930
+2021-04-06 14:13:58,217 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 151.809%
+2021-04-06 14:13:58,262 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 9.281
+2021-04-06 14:13:58,263 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 107392.862%
+2021-04-06 14:13:58,306 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 5.121
+2021-04-06 14:13:58,307 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 165782.759%
+2021-04-06 14:13:58,352 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.932°
+2021-04-06 14:13:58,352 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 2036706.544%
+2021-04-06 14:13:58,429 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 31742.652
+2021-04-06 14:13:58,429 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 365.252%
+2021-04-06 14:13:58,476 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 27916.615
+2021-04-06 14:13:58,476 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 41045.789%
+2021-04-06 14:13:58,600 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 31035.500
+2021-04-06 14:13:58,600 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 102053.863%
+2021-04-06 14:13:58,654 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 35074.634
+2021-04-06 14:13:58,654 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 3203011.100%
+2021-04-06 14:13:58,715 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 14.476
+2021-04-06 14:13:58,715 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 803.202%
+2021-04-06 14:13:58,763 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 18.181
+2021-04-06 14:13:58,763 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 41789.692%
+2021-04-06 14:13:58,812 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 20.794
+2021-04-06 14:13:58,812 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 528213.502%
+2021-04-06 14:13:58,867 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 19.839
+2021-04-06 14:13:58,867 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 152159.470%
+2021-04-06 14:13:58,923 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:13:58,923 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:13:58,963 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:13:58,963 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:13:59,002 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:13:59,002 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:13:59,041 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:13:59,041 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:13:59,080 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:13:59,080 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:13:59,118 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:13:59,118 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:13:59,157 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:13:59,157 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:13:59,194 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:13:59,194 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:13:59,245 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:13:59,246 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:13:59,285 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:13:59,285 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:13:59,324 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:13:59,324 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:13:59,361 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:13:59,362 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:13:59,399 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:13:59,399 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:13:59,436 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:13:59,436 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:13:59,486 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 7.877
+2021-04-06 14:13:59,486 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 29424.723%
+2021-04-06 14:13:59,528 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 5912.929
+2021-04-06 14:13:59,528 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 29988.614%
+2021-04-06 14:13:59,568 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 31752.698
+2021-04-06 14:13:59,568 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 97.479%
+2021-04-06 14:13:59,699 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:13:59,699 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:13:59,699 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:16:01,694 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:16:01,697 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:16:01,697 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:16:01,698 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:16:01,698 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:16:02,311 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:16:02,733 ERROR OrbiproTesterLauncher,203 - minimal step size (1.00E-04) reached, integration needs 9.19E-05
+org.orekit.errors.OrekitException: minimal step size (1.00E-04) reached, integration needs 9.19E-05
+	at org.orekit.errors.OrekitException.unwrap(OrekitException.java:154)
+	at org.orekit.propagation.integration.AbstractIntegratedPropagator.propagate(AbstractIntegratedPropagator.java:495)
+	at org.orekit.propagation.integration.AbstractIntegratedPropagator.propagate(AbstractIntegratedPropagator.java:414)
+	at eu.esa.orbiprotester.runs.StandardTestRun.runNumericalPropagation(StandardTestRun.java:200)
+	at eu.esa.orbiprotester.runs.StandardTestRun.runTest(StandardTestRun.java:93)
+	at eu.esa.orbiprotester.OrbiproTesterLauncher.run(OrbiproTesterLauncher.java:300)
+	at eu.esa.orbiprotester.OrbiproTesterLauncher.main(OrbiproTesterLauncher.java:224)
+Caused by: org.hipparchus.exception.MathIllegalArgumentException: minimal step size (1.00E-04) reached, integration needs 9.19E-05
+	at org.hipparchus.ode.nonstiff.AdaptiveStepsizeIntegrator.filterStep(AdaptiveStepsizeIntegrator.java:330)
+	at org.hipparchus.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate(EmbeddedRungeKuttaIntegrator.java:281)
+	at org.orekit.propagation.integration.AbstractIntegratedPropagator.propagate(AbstractIntegratedPropagator.java:469)
+	... 5 more
+2021-04-06 14:16:02,737 INFO  OrbiproTesterLauncher,207 - Orekit propagation ended prematurely. Only partial results may be available.
+2021-04-06 14:16:02,737 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 0.426
+2021-04-06 14:16:02,737 INFO  OrbiproTesterLauncher,1285 - Saving Actual results to file .\output\2021-04-06_14-16-01-698\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:16:02,753 INFO  OrbiproTesterLauncher,1287 - Actual results saved as file .\output\2021-04-06_14-16-01-698\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:16:02,753 INFO  OrbiproTesterLauncher,1289 - Adding Actual data to chart.
+2021-04-06 14:16:02,762 INFO  OrbiproTesterLauncher,1291 - Actual data added to chart.
+2021-04-06 14:16:02,763 INFO  OrbiproTesterLauncher,1421 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:16:02,879 INFO  OrbiproTesterLauncher,1428 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:16:02,882 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 0.000E0
+2021-04-06 14:16:02,883 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 0.000E0%
+2021-04-06 14:16:02,884 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 0.000E0
+2021-04-06 14:16:02,884 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 0.000E0%
+2021-04-06 14:16:02,884 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:16:02,885 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:16:02,885 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:16:02,885 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:16:03,213 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 0.000E0
+2021-04-06 14:16:03,213 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 0.000E0%
+2021-04-06 14:16:03,858 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.000E0
+2021-04-06 14:16:03,859 INFO  OrbiproTesterLauncher,890 - Eccentricity: 0.000E0%
+2021-04-06 14:16:03,915 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 0.000E0°
+2021-04-06 14:16:03,915 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 0.000E0%
+2021-04-06 14:16:03,969 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 0.000E0°
+2021-04-06 14:16:03,970 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 0.000E0%
+2021-04-06 14:16:04,021 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 0.000E0°
+2021-04-06 14:16:04,021 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 0.000E0%
+2021-04-06 14:16:04,081 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 0.000E0°
+2021-04-06 14:16:04,081 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 0.000E0%
+2021-04-06 14:16:04,152 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 1.274E-14°
+2021-04-06 14:16:04,152 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 9.289E-12%
+2021-04-06 14:16:04,214 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5.684E-14°
+2021-04-06 14:16:04,215 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 1.776E-14%
+2021-04-06 14:16:04,264 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 0.000E0°
+2021-04-06 14:16:04,265 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 0.000E0%
+2021-04-06 14:16:04,319 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.000E0
+2021-04-06 14:16:04,319 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 0.000E0%
+2021-04-06 14:16:04,358 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.000E0
+2021-04-06 14:16:04,359 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 0.000E0%
+2021-04-06 14:16:04,397 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.000E0
+2021-04-06 14:16:04,397 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 0.000E0%
+2021-04-06 14:16:04,436 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.000E0
+2021-04-06 14:16:04,436 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 0.000E0%
+2021-04-06 14:16:04,473 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 0.000E0°
+2021-04-06 14:16:04,473 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 0.000E0%
+2021-04-06 14:16:04,524 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 0.000E0
+2021-04-06 14:16:04,524 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 0.000E0%
+2021-04-06 14:16:04,574 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 0.000E0
+2021-04-06 14:16:04,575 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 0.000E0%
+2021-04-06 14:16:04,626 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 0.000E0
+2021-04-06 14:16:04,626 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 0.000E0%
+2021-04-06 14:16:04,689 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 0.000E0
+2021-04-06 14:16:04,689 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 0.000E0%
+2021-04-06 14:16:04,741 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 0.000E0
+2021-04-06 14:16:04,741 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 0.000E0%
+2021-04-06 14:16:04,792 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 0.000E0
+2021-04-06 14:16:04,792 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 0.000E0%
+2021-04-06 14:16:04,842 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 0.000E0
+2021-04-06 14:16:04,842 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 0.000E0%
+2021-04-06 14:16:04,892 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 0.000E0
+2021-04-06 14:16:04,892 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 0.000E0%
+2021-04-06 14:16:04,942 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:16:04,942 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:16:04,977 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:16:04,977 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:16:05,014 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:16:05,014 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:16:05,051 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:16:05,051 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:16:05,088 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:16:05,088 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:16:05,125 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:16:05,125 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:16:05,161 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:16:05,162 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:16:05,197 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:16:05,197 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:16:05,234 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:16:05,235 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:16:05,320 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:16:05,320 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:16:05,357 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:16:05,357 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:16:05,395 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:16:05,395 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:16:05,430 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:16:05,431 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:16:05,466 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:16:05,466 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:16:05,500 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.000E0
+2021-04-06 14:16:05,501 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 0.000E0%
+2021-04-06 14:16:05,537 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 0.000E0
+2021-04-06 14:16:05,537 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 0.000E0%
+2021-04-06 14:16:05,577 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 0.000E0
+2021-04-06 14:16:05,577 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 0.000E0%
+2021-04-06 14:16:05,699 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:16:05,699 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:16:05,699 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:17:26,572 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:17:26,576 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:17:26,576 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:17:26,577 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:17:26,578 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:17:27,206 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:17:27,753 ERROR OrbiproTesterLauncher,203 - minimal step size (1.00E-04) reached, integration needs 9.70E-05
+org.orekit.errors.OrekitException: minimal step size (1.00E-04) reached, integration needs 9.70E-05
+	at org.orekit.errors.OrekitException.unwrap(OrekitException.java:154)
+	at org.orekit.propagation.integration.AbstractIntegratedPropagator.propagate(AbstractIntegratedPropagator.java:495)
+	at org.orekit.propagation.integration.AbstractIntegratedPropagator.propagate(AbstractIntegratedPropagator.java:414)
+	at eu.esa.orbiprotester.runs.StandardTestRun.runNumericalPropagation(StandardTestRun.java:200)
+	at eu.esa.orbiprotester.runs.StandardTestRun.runTest(StandardTestRun.java:93)
+	at eu.esa.orbiprotester.OrbiproTesterLauncher.run(OrbiproTesterLauncher.java:300)
+	at eu.esa.orbiprotester.OrbiproTesterLauncher.main(OrbiproTesterLauncher.java:224)
+Caused by: org.hipparchus.exception.MathIllegalArgumentException: minimal step size (1.00E-04) reached, integration needs 9.70E-05
+	at org.hipparchus.ode.nonstiff.AdaptiveStepsizeIntegrator.filterStep(AdaptiveStepsizeIntegrator.java:330)
+	at org.hipparchus.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate(EmbeddedRungeKuttaIntegrator.java:281)
+	at org.orekit.propagation.integration.AbstractIntegratedPropagator.propagate(AbstractIntegratedPropagator.java:469)
+	... 5 more
+2021-04-06 14:17:27,756 INFO  OrbiproTesterLauncher,207 - Orekit propagation ended prematurely. Only partial results may be available.
+2021-04-06 14:17:27,757 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 0.55
+2021-04-06 14:17:27,757 INFO  OrbiproTesterLauncher,1285 - Saving Actual results to file .\output\2021-04-06_14-17-26-577\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:17:27,774 INFO  OrbiproTesterLauncher,1287 - Actual results saved as file .\output\2021-04-06_14-17-26-577\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:17:27,774 INFO  OrbiproTesterLauncher,1289 - Adding Actual data to chart.
+2021-04-06 14:17:27,783 INFO  OrbiproTesterLauncher,1291 - Actual data added to chart.
+2021-04-06 14:17:27,783 INFO  OrbiproTesterLauncher,1421 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:17:27,901 INFO  OrbiproTesterLauncher,1428 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:17:27,904 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 288.643
+2021-04-06 14:17:27,906 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 4.050E-3%
+2021-04-06 14:17:27,906 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 1.012
+2021-04-06 14:17:27,906 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 1.227E-2%
+2021-04-06 14:17:27,906 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:17:27,907 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:17:27,907 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:17:27,907 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:17:28,229 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 1883.413
+2021-04-06 14:17:28,230 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 20.738%
+2021-04-06 14:17:28,562 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.215
+2021-04-06 14:17:28,563 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.941%
+2021-04-06 14:17:28,631 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 4.013°
+2021-04-06 14:17:28,631 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 4.239E0%
+2021-04-06 14:17:28,696 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 1.395°
+2021-04-06 14:17:28,696 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 5.329E-1%
+2021-04-06 14:17:28,748 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 18.742°
+2021-04-06 14:17:28,748 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 49.088%
+2021-04-06 14:17:28,798 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 20.724°
+2021-04-06 14:17:28,798 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 5.765E0%
+2021-04-06 14:17:28,866 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 1.982°
+2021-04-06 14:17:28,866 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 5.263E0%
+2021-04-06 14:17:28,925 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 20.137°
+2021-04-06 14:17:28,926 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 6.713E0%
+2021-04-06 14:17:28,965 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 0.587°
+2021-04-06 14:17:28,965 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 1.959E-1%
+2021-04-06 14:17:29,019 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.186
+2021-04-06 14:17:29,019 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.956%
+2021-04-06 14:17:29,058 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.107
+2021-04-06 14:17:29,059 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.909%
+2021-04-06 14:17:29,097 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.082
+2021-04-06 14:17:29,097 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 7.654E0%
+2021-04-06 14:17:29,134 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.017
+2021-04-06 14:17:29,134 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 10.812%
+2021-04-06 14:17:29,171 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 0.587°
+2021-04-06 14:17:29,172 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 1.959E-1%
+2021-04-06 14:17:29,224 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 71.272
+2021-04-06 14:17:29,225 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 1.000E0%
+2021-04-06 14:17:29,264 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 165.626
+2021-04-06 14:17:29,264 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 14.295%
+2021-04-06 14:17:29,314 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 173.955
+2021-04-06 14:17:29,314 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 3.131E0%
+2021-04-06 14:17:29,364 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 160.071
+2021-04-06 14:17:29,364 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 3.715E0%
+2021-04-06 14:17:29,414 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 0.803
+2021-04-06 14:17:29,414 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 9.735E0%
+2021-04-06 14:17:29,453 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 0.581
+2021-04-06 14:17:29,453 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 306.498%
+2021-04-06 14:17:29,504 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 0.626
+2021-04-06 14:17:29,504 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 12.407%
+2021-04-06 14:17:29,554 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 0.543
+2021-04-06 14:17:29,554 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 8.332E0%
+2021-04-06 14:17:29,604 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:17:29,604 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:17:29,641 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:17:29,641 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:17:29,679 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:17:29,679 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:17:29,716 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:17:29,716 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:17:29,754 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:17:29,754 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:17:29,798 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:17:29,798 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:17:29,834 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:17:29,834 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:17:29,869 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:17:29,869 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:17:29,904 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:17:29,905 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:17:29,939 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:17:29,940 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:17:29,976 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:17:29,976 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:17:30,011 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:17:30,012 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:17:30,047 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:17:30,047 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:17:30,081 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:17:30,081 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:17:30,115 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.093
+2021-04-06 14:17:30,116 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 4.349E-1%
+2021-04-06 14:17:30,153 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 71.343
+2021-04-06 14:17:30,153 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 9.537E0%
+2021-04-06 14:17:30,188 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 3838.169
+2021-04-06 14:17:30,189 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 82.374%
+2021-04-06 14:17:30,314 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:17:30,314 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:17:30,314 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:19:01,985 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:19:01,987 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:19:01,987 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:19:01,988 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:19:01,989 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:19:02,603 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:20:41,412 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 98.808
+2021-04-06 14:20:41,414 INFO  OrbiproTesterLauncher,1285 - Saving Actual results to file .\output\2021-04-06_14-19-01-988\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:20:41,692 INFO  OrbiproTesterLauncher,1287 - Actual results saved as file .\output\2021-04-06_14-19-01-988\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:20:41,693 INFO  OrbiproTesterLauncher,1289 - Adding Actual data to chart.
+2021-04-06 14:20:41,773 INFO  OrbiproTesterLauncher,1291 - Actual data added to chart.
+2021-04-06 14:20:41,773 INFO  OrbiproTesterLauncher,1421 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:20:41,870 INFO  OrbiproTesterLauncher,1428 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:20:41,878 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 7.992
+2021-04-06 14:20:41,878 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 1.110E-4%
+2021-04-06 14:20:41,879 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 0.008
+2021-04-06 14:20:41,880 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 1.106E-4%
+2021-04-06 14:20:41,880 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:20:41,884 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:20:41,885 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:20:41,885 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:20:42,223 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 0.012
+2021-04-06 14:20:42,223 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 1.639E-4%
+2021-04-06 14:20:42,587 INFO  OrbiproTesterLauncher,879 - Eccentricity: 4.946E-6
+2021-04-06 14:20:42,587 INFO  OrbiproTesterLauncher,890 - Eccentricity: 3.734E0%
+2021-04-06 14:20:42,660 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 1.834E-7°
+2021-04-06 14:20:42,661 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 1.858E-7%
+2021-04-06 14:20:42,755 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 4.330E-5°
+2021-04-06 14:20:42,755 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 1.645E-5%
+2021-04-06 14:20:42,812 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 0.100°
+2021-04-06 14:20:42,812 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 1.758E-1%
+2021-04-06 14:20:42,867 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 0.040°
+2021-04-06 14:20:42,867 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 4.302E0%
+2021-04-06 14:20:42,927 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 0.063°
+2021-04-06 14:20:42,927 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 6.920E0%
+2021-04-06 14:20:42,988 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 0.100°
+2021-04-06 14:20:42,988 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 3.124E-2%
+2021-04-06 14:20:43,034 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 0.063°
+2021-04-06 14:20:43,035 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 4.439E0%
+2021-04-06 14:20:43,092 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 3.350E-6
+2021-04-06 14:20:43,092 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 3.935E0%
+2021-04-06 14:20:43,142 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 3.646E-6
+2021-04-06 14:20:43,142 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 3.594E0%
+2021-04-06 14:20:43,187 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 1.076E-7
+2021-04-06 14:20:43,188 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 9.307E-6%
+2021-04-06 14:20:43,235 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 8.738E-7
+2021-04-06 14:20:43,235 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 6.317E-4%
+2021-04-06 14:20:43,277 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 0.063°
+2021-04-06 14:20:43,277 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 4.439E0%
+2021-04-06 14:20:43,331 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 0.047
+2021-04-06 14:20:43,331 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 6.566E-4%
+2021-04-06 14:20:43,619 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 1.480
+2021-04-06 14:20:43,619 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 21.864%
+2021-04-06 14:20:43,682 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 7.881
+2021-04-06 14:20:43,682 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 37.725%
+2021-04-06 14:20:43,744 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 7.598
+2021-04-06 14:20:43,744 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 80.731%
+2021-04-06 14:20:43,827 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 4.278E-5
+2021-04-06 14:20:43,827 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 5.750E-4%
+2021-04-06 14:20:43,895 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 0.002
+2021-04-06 14:20:43,896 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 57.109%
+2021-04-06 14:20:43,957 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 0.008
+2021-04-06 14:20:43,958 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 46.808%
+2021-04-06 14:20:44,019 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 0.008
+2021-04-06 14:20:44,019 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 53.022%
+2021-04-06 14:20:44,081 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:20:44,082 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:20:44,121 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:20:44,121 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:20:44,166 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:20:44,166 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:20:44,205 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:20:44,205 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:20:44,245 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:20:44,245 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:20:44,284 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:20:44,284 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:20:44,322 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:20:44,323 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:20:44,361 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:20:44,361 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:20:44,399 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:20:44,399 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:20:44,438 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:20:44,438 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:20:44,477 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:20:44,477 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:20:44,515 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:20:44,515 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:20:44,553 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:20:44,553 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:20:44,591 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:20:44,591 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:20:44,639 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 2.887E-6
+2021-04-06 14:20:44,640 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 1.386E-5%
+2021-04-06 14:20:44,681 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 0.024
+2021-04-06 14:20:44,682 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 2.907E-3%
+2021-04-06 14:20:44,787 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 0.047
+2021-04-06 14:20:44,787 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 5.771E-3%
+2021-04-06 14:20:44,913 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:20:44,913 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:20:44,913 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:28:21,517 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:28:21,519 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:28:21,520 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:28:21,521 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:28:21,521 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:28:22,167 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:30:03,979 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 101.811
+2021-04-06 14:30:03,981 INFO  OrbiproTesterLauncher,1285 - Saving Actual results to file .\output\2021-04-06_14-28-21-521\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:30:04,228 INFO  OrbiproTesterLauncher,1287 - Actual results saved as file .\output\2021-04-06_14-28-21-521\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:30:04,229 INFO  OrbiproTesterLauncher,1289 - Adding Actual data to chart.
+2021-04-06 14:30:04,316 INFO  OrbiproTesterLauncher,1291 - Actual data added to chart.
+2021-04-06 14:30:04,316 INFO  OrbiproTesterLauncher,1421 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:30:04,448 INFO  OrbiproTesterLauncher,1428 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:30:04,454 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 40502.582
+2021-04-06 14:30:04,455 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 6.167E-1%
+2021-04-06 14:30:04,455 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 28.238
+2021-04-06 14:30:04,457 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 8.448E-1%
+2021-04-06 14:30:04,457 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:30:04,460 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:30:04,461 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:30:04,461 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:30:04,795 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 10183.302
+2021-04-06 14:30:04,795 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 58.586%
+2021-04-06 14:30:05,153 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.926
+2021-04-06 14:30:05,153 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.986%
+2021-04-06 14:30:05,226 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 30.585°
+2021-04-06 14:30:05,226 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 23.659%
+2021-04-06 14:30:05,287 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 96.339°
+2021-04-06 14:30:05,288 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 26.797%
+2021-04-06 14:30:05,344 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 50.282°
+2021-04-06 14:30:05,345 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 47.321%
+2021-04-06 14:30:05,397 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.797°
+2021-04-06 14:30:05,397 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 347892.975%
+2021-04-06 14:30:05,469 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.924°
+2021-04-06 14:30:05,469 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 31353.790%
+2021-04-06 14:30:05,543 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 146.621°
+2021-04-06 14:30:05,543 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 42664.209%
+2021-04-06 14:30:05,588 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.937°
+2021-04-06 14:30:05,588 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 112579.787%
+2021-04-06 14:30:05,658 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.903
+2021-04-06 14:30:05,658 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 105.457%
+2021-04-06 14:30:05,701 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.917
+2021-04-06 14:30:05,702 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 137.269%
+2021-04-06 14:30:05,745 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 1.140
+2021-04-06 14:30:05,745 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 6926.026%
+2021-04-06 14:30:05,788 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 2.148
+2021-04-06 14:30:05,788 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 45120.779%
+2021-04-06 14:30:05,831 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.937°
+2021-04-06 14:30:05,831 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 112579.787%
+2021-04-06 14:30:05,898 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 26278.682
+2021-04-06 14:30:05,898 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 458.966%
+2021-04-06 14:30:05,957 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 14193.674
+2021-04-06 14:30:05,958 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 250474.983%
+2021-04-06 14:30:06,011 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 26715.670
+2021-04-06 14:30:06,011 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 11802.200%
+2021-04-06 14:30:06,069 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 32863.870
+2021-04-06 14:30:06,070 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 89881.769%
+2021-04-06 14:30:06,127 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 16.973
+2021-04-06 14:30:06,127 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 692.657%
+2021-04-06 14:30:06,178 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 22.420
+2021-04-06 14:30:06,178 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 105890.644%
+2021-04-06 14:30:06,228 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 25.180
+2021-04-06 14:30:06,228 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 82719.716%
+2021-04-06 14:30:06,286 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 20.938
+2021-04-06 14:30:06,286 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 259937.708%
+2021-04-06 14:30:06,347 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:30:06,348 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:30:06,388 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:30:06,388 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:30:06,429 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:30:06,430 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:30:06,478 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:30:06,478 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:30:06,518 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:30:06,519 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:30:06,556 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:30:06,556 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:30:06,594 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:30:06,594 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:30:06,632 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:30:06,632 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:30:06,670 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:30:06,671 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:30:06,709 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:30:06,709 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:30:06,747 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:30:06,747 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:30:06,785 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:30:06,786 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:30:06,824 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:30:06,824 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:30:06,860 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:30:06,860 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:30:06,918 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 6.423
+2021-04-06 14:30:06,918 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 40409.273%
+2021-04-06 14:30:06,961 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 5910.929
+2021-04-06 14:30:06,961 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 437136.062%
+2021-04-06 14:30:07,001 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 26277.531
+2021-04-06 14:30:07,001 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 96.969%
+2021-04-06 14:30:07,136 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:30:07,137 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:30:07,137 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:31:05,225 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:31:05,227 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:31:05,227 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:31:05,228 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:31:05,228 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:31:05,856 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:32:46,567 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 100.708
+2021-04-06 14:32:46,569 INFO  OrbiproTesterLauncher,1284 - Saving Actual results to file .\output\2021-04-06_14-31-05-228\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:32:46,795 INFO  OrbiproTesterLauncher,1286 - Actual results saved as file .\output\2021-04-06_14-31-05-228\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:32:46,796 INFO  OrbiproTesterLauncher,1288 - Adding Actual data to chart.
+2021-04-06 14:32:46,871 INFO  OrbiproTesterLauncher,1290 - Actual data added to chart.
+2021-04-06 14:32:46,872 INFO  OrbiproTesterLauncher,1420 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:32:46,969 INFO  OrbiproTesterLauncher,1427 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:32:46,977 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 24483.625
+2021-04-06 14:32:46,977 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 2.503E-1%
+2021-04-06 14:32:46,977 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 18.880
+2021-04-06 14:32:46,979 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 3.461E-1%
+2021-04-06 14:32:46,979 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:32:46,983 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:32:46,983 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:32:46,984 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:32:47,318 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 3794.609
+2021-04-06 14:32:47,319 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 34.518%
+2021-04-06 14:32:47,669 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.623
+2021-04-06 14:32:47,670 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.980%
+2021-04-06 14:32:47,754 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 3.352°
+2021-04-06 14:32:47,754 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 3.285E0%
+2021-04-06 14:32:47,814 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 1.972°
+2021-04-06 14:32:47,814 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 7.548E-1%
+2021-04-06 14:32:47,876 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 16.056°
+2021-04-06 14:32:47,876 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 39.289%
+2021-04-06 14:32:47,936 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.957°
+2021-04-06 14:32:47,937 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 37406.444%
+2021-04-06 14:32:48,042 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.791°
+2021-04-06 14:32:48,042 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 20882.431%
+2021-04-06 14:32:48,116 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 16.062°
+2021-04-06 14:32:48,116 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5.283E0%
+2021-04-06 14:32:48,161 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.890°
+2021-04-06 14:32:48,161 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 2003214.331%
+2021-04-06 14:32:48,231 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.427
+2021-04-06 14:32:48,232 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.981%
+2021-04-06 14:32:48,276 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.454
+2021-04-06 14:32:48,276 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.978%
+2021-04-06 14:32:48,321 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.069
+2021-04-06 14:32:48,321 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 5.630E0%
+2021-04-06 14:32:48,364 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.043
+2021-04-06 14:32:48,365 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 23.758%
+2021-04-06 14:32:48,410 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.890°
+2021-04-06 14:32:48,411 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 2003214.331%
+2021-04-06 14:32:48,479 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 10480.781
+2021-04-06 14:32:48,479 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 73.012%
+2021-04-06 14:32:48,534 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 5579.344
+2021-04-06 14:32:48,534 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 5957.828%
+2021-04-06 14:32:48,603 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 19614.559
+2021-04-06 14:32:48,603 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 247882.994%
+2021-04-06 14:32:48,674 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 22183.527
+2021-04-06 14:32:48,675 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 111218.741%
+2021-04-06 14:32:48,742 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 5.017
+2021-04-06 14:32:48,742 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 153.148%
+2021-04-06 14:32:48,795 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 3.200
+2021-04-06 14:32:48,795 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 503108.637%
+2021-04-06 14:32:48,864 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 17.644
+2021-04-06 14:32:48,864 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 43240.095%
+2021-04-06 14:32:48,931 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 16.857
+2021-04-06 14:32:48,931 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 158782.110%
+2021-04-06 14:32:49,000 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:32:49,000 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:32:49,039 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:32:49,040 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:32:49,078 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:32:49,078 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:32:49,117 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:32:49,117 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:32:49,156 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:32:49,156 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:32:49,195 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:32:49,195 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:32:49,232 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:32:49,232 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:32:49,269 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:32:49,269 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:32:49,307 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:32:49,307 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:32:49,345 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:32:49,345 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:32:49,383 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:32:49,383 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:32:49,421 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:32:49,421 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:32:49,457 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:32:49,458 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:32:49,505 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:32:49,505 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:32:49,542 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.131
+2021-04-06 14:32:49,543 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 6.254E-1%
+2021-04-06 14:32:49,583 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 3053.409
+2021-04-06 14:32:49,584 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 55039.115%
+2021-04-06 14:32:49,622 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 10642.628
+2021-04-06 14:32:49,622 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 92.836%
+2021-04-06 14:32:49,764 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:32:49,765 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:32:49,765 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 14:39:50,953 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:39:50,956 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:39:50,956 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:39:50,958 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:39:50,958 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:40:01,002 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:56:49,501 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 14:56:49,503 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 14:56:49,503 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 14:56:49,505 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 14:56:49,505 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 14:56:50,218 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 14:58:30,787 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 100.568
+2021-04-06 14:58:30,789 INFO  OrbiproTesterLauncher,1284 - Saving Actual results to file .\output\2021-04-06_14-56-49-504\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:58:31,030 INFO  OrbiproTesterLauncher,1286 - Actual results saved as file .\output\2021-04-06_14-56-49-504\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 14:58:31,030 INFO  OrbiproTesterLauncher,1288 - Adding Actual data to chart.
+2021-04-06 14:58:31,120 INFO  OrbiproTesterLauncher,1290 - Actual data added to chart.
+2021-04-06 14:58:31,120 INFO  OrbiproTesterLauncher,1420 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 14:58:31,235 INFO  OrbiproTesterLauncher,1427 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 14:58:31,242 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 24483.625
+2021-04-06 14:58:31,242 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 2.503E-1%
+2021-04-06 14:58:31,243 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 18.880
+2021-04-06 14:58:31,245 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 3.461E-1%
+2021-04-06 14:58:31,245 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 14:58:31,248 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 14:58:31,248 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 14:58:31,249 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 14:58:31,627 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 3794.609
+2021-04-06 14:58:31,628 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 34.518%
+2021-04-06 14:58:31,981 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.623
+2021-04-06 14:58:31,981 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.980%
+2021-04-06 14:58:32,063 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 3.352°
+2021-04-06 14:58:32,064 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 3.285E0%
+2021-04-06 14:58:32,137 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 1.972°
+2021-04-06 14:58:32,138 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 7.548E-1%
+2021-04-06 14:58:32,203 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 16.056°
+2021-04-06 14:58:32,203 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 39.289%
+2021-04-06 14:58:32,284 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.957°
+2021-04-06 14:58:32,285 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 37406.444%
+2021-04-06 14:58:32,369 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.791°
+2021-04-06 14:58:32,369 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 20882.431%
+2021-04-06 14:58:32,446 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 16.062°
+2021-04-06 14:58:32,446 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5.283E0%
+2021-04-06 14:58:32,495 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.890°
+2021-04-06 14:58:32,495 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 2003214.331%
+2021-04-06 14:58:32,572 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.427
+2021-04-06 14:58:32,572 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.981%
+2021-04-06 14:58:32,618 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.454
+2021-04-06 14:58:32,618 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.978%
+2021-04-06 14:58:32,662 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.069
+2021-04-06 14:58:32,662 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 5.630E0%
+2021-04-06 14:58:32,706 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.043
+2021-04-06 14:58:32,706 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 23.758%
+2021-04-06 14:58:32,751 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.890°
+2021-04-06 14:58:32,751 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 2003214.331%
+2021-04-06 14:58:32,818 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 10480.781
+2021-04-06 14:58:32,818 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 73.012%
+2021-04-06 14:58:32,870 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 5579.344
+2021-04-06 14:58:32,870 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 5957.828%
+2021-04-06 14:58:32,931 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 19614.559
+2021-04-06 14:58:32,932 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 247882.994%
+2021-04-06 14:58:32,997 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 22183.527
+2021-04-06 14:58:32,997 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 111218.741%
+2021-04-06 14:58:33,061 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 5.017
+2021-04-06 14:58:33,061 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 153.148%
+2021-04-06 14:58:33,114 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 3.200
+2021-04-06 14:58:33,115 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 503108.637%
+2021-04-06 14:58:33,183 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 17.644
+2021-04-06 14:58:33,183 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 43240.095%
+2021-04-06 14:58:33,250 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 16.857
+2021-04-06 14:58:33,250 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 158782.110%
+2021-04-06 14:58:33,318 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 14:58:33,318 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 14:58:33,362 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:58:33,362 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:58:33,411 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:58:33,411 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:58:33,451 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 14:58:33,451 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 14:58:33,491 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 14:58:33,491 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 14:58:33,531 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 14:58:33,531 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 14:58:33,568 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 14:58:33,568 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 14:58:33,605 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 14:58:33,605 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 14:58:33,643 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 14:58:33,643 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 14:58:33,680 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 14:58:33,681 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 14:58:33,718 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 14:58:33,719 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 14:58:33,758 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 14:58:33,758 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 14:58:33,807 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 14:58:33,807 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 14:58:33,844 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 14:58:33,844 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 14:58:33,882 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.131
+2021-04-06 14:58:33,882 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 6.254E-1%
+2021-04-06 14:58:33,927 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 3053.409
+2021-04-06 14:58:33,927 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 55039.115%
+2021-04-06 14:58:33,977 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 10642.628
+2021-04-06 14:58:33,978 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 92.836%
+2021-04-06 14:58:34,107 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 14:58:34,107 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 14:58:34,107 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 15:03:56,556 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:03:56,560 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:03:56,560 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:03:56,562 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:03:56,562 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:04:12,981 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:06:19,340 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:06:19,342 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:06:19,343 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:06:19,344 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:06:19,344 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:06:20,016 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:07:59,462 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 99.445
+2021-04-06 15:07:59,464 INFO  OrbiproTesterLauncher,1284 - Saving Actual results to file .\output\2021-04-06_15-06-19-344\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 15:07:59,681 INFO  OrbiproTesterLauncher,1286 - Actual results saved as file .\output\2021-04-06_15-06-19-344\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 15:07:59,681 INFO  OrbiproTesterLauncher,1288 - Adding Actual data to chart.
+2021-04-06 15:07:59,757 INFO  OrbiproTesterLauncher,1290 - Actual data added to chart.
+2021-04-06 15:07:59,758 INFO  OrbiproTesterLauncher,1420 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 15:07:59,852 INFO  OrbiproTesterLauncher,1427 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 15:07:59,859 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 27442.532
+2021-04-06 15:07:59,859 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 2.594E-1%
+2021-04-06 15:07:59,859 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 19.109
+2021-04-06 15:07:59,861 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 3.835E-1%
+2021-04-06 15:07:59,861 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 15:07:59,865 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 15:07:59,865 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 15:07:59,865 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 15:08:00,200 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 5193.236
+2021-04-06 15:08:00,200 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 41.909%
+2021-04-06 15:08:00,561 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.667
+2021-04-06 15:08:00,561 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.981%
+2021-04-06 15:08:00,629 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 3.494°
+2021-04-06 15:08:00,629 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 3.419E0%
+2021-04-06 15:08:00,691 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 2.743°
+2021-04-06 15:08:00,691 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 1.053E0%
+2021-04-06 15:08:00,741 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 16.117°
+2021-04-06 15:08:00,741 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 39.495%
+2021-04-06 15:08:00,790 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.828°
+2021-04-06 15:08:00,790 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 97396.023%
+2021-04-06 15:08:00,865 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.640°
+2021-04-06 15:08:00,865 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 12061.422%
+2021-04-06 15:08:00,941 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 16.123°
+2021-04-06 15:08:00,941 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5.304E0%
+2021-04-06 15:08:00,985 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.446°
+2021-04-06 15:08:00,986 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 9510.005%
+2021-04-06 15:08:01,054 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.454
+2021-04-06 15:08:01,054 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.982%
+2021-04-06 15:08:01,097 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.489
+2021-04-06 15:08:01,097 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.980%
+2021-04-06 15:08:01,140 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.070
+2021-04-06 15:08:01,140 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 5.707E0%
+2021-04-06 15:08:01,184 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.060
+2021-04-06 15:08:01,184 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 30.097%
+2021-04-06 15:08:01,228 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.446°
+2021-04-06 15:08:01,229 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 9510.005%
+2021-04-06 15:08:01,296 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 13418.258
+2021-04-06 15:08:01,296 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 68.905%
+2021-04-06 15:08:01,345 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 6483.500
+2021-04-06 15:08:01,345 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 29430.833%
+2021-04-06 15:08:01,407 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 21306.230
+2021-04-06 15:08:01,407 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 320854.079%
+2021-04-06 15:08:01,472 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 24527.890
+2021-04-06 15:08:01,472 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 66657.892%
+2021-04-06 15:08:01,539 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 4.991
+2021-04-06 15:08:01,539 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 192.243%
+2021-04-06 15:08:01,591 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 3.257
+2021-04-06 15:08:01,591 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 757361.435%
+2021-04-06 15:08:01,658 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 17.563
+2021-04-06 15:08:01,658 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 183631.114%
+2021-04-06 15:08:01,724 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 16.661
+2021-04-06 15:08:01,725 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 3020748.725%
+2021-04-06 15:08:01,792 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 15:08:01,792 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 15:08:01,831 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:08:01,831 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:08:01,871 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:08:01,871 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:08:01,910 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:08:01,910 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:08:01,950 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 15:08:01,950 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 15:08:01,988 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 15:08:01,989 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 15:08:02,035 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 15:08:02,035 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 15:08:02,072 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 15:08:02,073 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 15:08:02,111 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 15:08:02,111 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 15:08:02,149 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 15:08:02,149 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 15:08:02,187 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 15:08:02,187 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 15:08:02,225 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 15:08:02,225 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 15:08:02,263 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 15:08:02,264 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 15:08:02,301 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 15:08:02,301 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 15:08:02,338 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.183
+2021-04-06 15:08:02,339 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 8.730E-1%
+2021-04-06 15:08:02,399 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 3071.349
+2021-04-06 15:08:02,399 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 344334.982%
+2021-04-06 15:08:02,438 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 13433.649
+2021-04-06 15:08:02,438 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 94.239%
+2021-04-06 15:08:02,565 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 15:08:02,566 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 15:08:02,566 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 15:09:14,897 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:09:14,900 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:09:14,900 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:09:14,902 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:09:14,902 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:09:25,458 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:17:45,504 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:17:45,507 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:17:45,507 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:17:45,510 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:17:45,510 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:17:46,195 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:19:25,093 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 98.897
+2021-04-06 15:19:25,095 INFO  OrbiproTesterLauncher,1284 - Saving Actual results to file .\output\2021-04-06_15-17-45-509\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 15:19:25,313 INFO  OrbiproTesterLauncher,1286 - Actual results saved as file .\output\2021-04-06_15-17-45-509\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 15:19:25,313 INFO  OrbiproTesterLauncher,1288 - Adding Actual data to chart.
+2021-04-06 15:19:25,388 INFO  OrbiproTesterLauncher,1290 - Actual data added to chart.
+2021-04-06 15:19:25,388 INFO  OrbiproTesterLauncher,1420 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 15:19:25,485 INFO  OrbiproTesterLauncher,1427 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 15:19:25,491 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 24609.399
+2021-04-06 15:19:25,492 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 2.683E-1%
+2021-04-06 15:19:25,492 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 19.671
+2021-04-06 15:19:25,494 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 3.426E-1%
+2021-04-06 15:19:25,494 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 15:19:25,497 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 15:19:25,497 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 15:19:25,497 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 15:19:25,827 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 4251.535
+2021-04-06 15:19:25,827 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 37.131%
+2021-04-06 15:19:26,148 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.637
+2021-04-06 15:19:26,148 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.980%
+2021-04-06 15:19:26,221 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 3.468°
+2021-04-06 15:19:26,221 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 3.395E0%
+2021-04-06 15:19:26,281 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 2.285°
+2021-04-06 15:19:26,281 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 8.758E-1%
+2021-04-06 15:19:26,334 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 16.184°
+2021-04-06 15:19:26,334 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 39.724%
+2021-04-06 15:19:26,385 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.874°
+2021-04-06 15:19:26,385 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 21237.604%
+2021-04-06 15:19:26,458 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.973°
+2021-04-06 15:19:26,458 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 47757.535%
+2021-04-06 15:19:26,526 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 16.189°
+2021-04-06 15:19:26,526 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 5.327E0%
+2021-04-06 15:19:26,570 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.881°
+2021-04-06 15:19:26,570 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 682760.855%
+2021-04-06 15:19:26,638 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.439
+2021-04-06 15:19:26,638 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.981%
+2021-04-06 15:19:26,681 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.462
+2021-04-06 15:19:26,681 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.979%
+2021-04-06 15:19:26,723 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.071
+2021-04-06 15:19:26,723 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 5.750E0%
+2021-04-06 15:19:26,764 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.050
+2021-04-06 15:19:26,765 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 26.520%
+2021-04-06 15:19:26,808 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.881°
+2021-04-06 15:19:26,808 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 682760.855%
+2021-04-06 15:19:26,875 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 11505.855
+2021-04-06 15:19:26,875 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 68.564%
+2021-04-06 15:19:26,924 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 5633.608
+2021-04-06 15:19:26,925 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 18365.301%
+2021-04-06 15:19:26,985 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 19972.730
+2021-04-06 15:19:26,986 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 14763.695%
+2021-04-06 15:19:27,054 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 22427.690
+2021-04-06 15:19:27,055 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 27156.284%
+2021-04-06 15:19:27,117 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 4.868
+2021-04-06 15:19:27,117 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 166.571%
+2021-04-06 15:19:27,169 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 3.264
+2021-04-06 15:19:27,169 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 54474.673%
+2021-04-06 15:19:27,237 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 18.554
+2021-04-06 15:19:27,237 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 1331485.289%
+2021-04-06 15:19:27,302 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 16.904
+2021-04-06 15:19:27,303 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 164149.184%
+2021-04-06 15:19:27,370 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 15:19:27,370 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 15:19:27,410 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:19:27,410 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:19:27,450 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:19:27,450 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:19:27,489 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:19:27,489 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:19:27,528 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 15:19:27,528 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 15:19:27,567 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 15:19:27,567 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 15:19:27,612 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 15:19:27,613 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 15:19:27,649 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 15:19:27,650 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 15:19:27,686 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 15:19:27,686 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 15:19:27,724 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 15:19:27,724 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 15:19:27,761 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 15:19:27,761 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 15:19:27,799 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 15:19:27,799 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 15:19:27,836 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 15:19:27,836 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 15:19:27,873 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 15:19:27,873 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 15:19:27,910 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.152
+2021-04-06 15:19:27,910 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 7.259E-1%
+2021-04-06 15:19:27,966 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 3051.495
+2021-04-06 15:19:27,966 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 119136.287%
+2021-04-06 15:19:28,003 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 11534.052
+2021-04-06 15:19:28,003 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 93.353%
+2021-04-06 15:19:28,132 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 15:19:28,132 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 15:19:28,132 INFO  OrbiproTesterLauncher,235 - All tests finished!
+2021-04-06 15:24:34,291 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:24:34,294 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:24:34,294 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:24:34,296 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:24:34,296 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:25:00,305 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:28:34,794 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:28:34,796 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:28:34,797 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:28:34,798 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:28:34,799 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:28:38,784 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:28:56,799 INFO  OrbiproTesterLauncher,165 - No input folder specified! Using default folder ('./input').
+2021-04-06 15:28:56,802 INFO  OrbiproTesterLauncher,168 - No output folder specified! Using default folder ('./output').
+2021-04-06 15:28:56,802 INFO  OrbiproTesterLauncher,171 - No reference folder specified! Using default folder ('./matlab').
+2021-04-06 15:28:56,804 INFO  OrbiproTesterLauncher,220 - Starting tests for 1 input files!
+2021-04-06 15:28:56,805 INFO  OrbiproTesterLauncher,222 - Starting test for input file TC_WP3_005.in
+2021-04-06 15:28:57,546 INFO  OrbiproTesterLauncher,196 - Running Orekit propagation ....
+2021-04-06 15:30:41,064 INFO  OrbiproTesterLauncher,209 - Orekit execution time (s): 103.515
+2021-04-06 15:30:41,067 INFO  OrbiproTesterLauncher,1284 - Saving Actual results to file .\output\2021-04-06_15-28-56-804\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 15:30:41,383 INFO  OrbiproTesterLauncher,1286 - Actual results saved as file .\output\2021-04-06_15-28-56-804\TC_WP3_005\TC_WP3_005_Orekit.out
+2021-04-06 15:30:41,383 INFO  OrbiproTesterLauncher,1288 - Adding Actual data to chart.
+2021-04-06 15:30:41,698 INFO  OrbiproTesterLauncher,1290 - Actual data added to chart.
+2021-04-06 15:30:41,698 INFO  OrbiproTesterLauncher,1420 - Reading data series file TC_WP3_005_Orekit.out
+2021-04-06 15:30:41,833 INFO  OrbiproTesterLauncher,1427 - Dataq series file TC_WP3_005_Orekit.out read succesfully!
+2021-04-06 15:30:41,841 INFO  OrbiproTesterLauncher,879 - Position difference Actual - Reference (Km): 32431.732
+2021-04-06 15:30:41,841 INFO  OrbiproTesterLauncher,890 - Position difference Actual - Reference (Km): 2.831E-1%
+2021-04-06 15:30:41,841 INFO  OrbiproTesterLauncher,879 - Velocity difference Actual - Reference (Km/s): 20.465
+2021-04-06 15:30:41,843 INFO  OrbiproTesterLauncher,890 - Velocity difference Actual - Reference (Km/s): 4.752E-1%
+2021-04-06 15:30:41,843 INFO  OrbiproTesterLauncher,879 - Time occurence difference Actual - Reference (s): 0.000E0
+2021-04-06 15:30:41,847 INFO  OrbiproTesterLauncher,879 - Quaternion angle difference Actual - Reference (deg): 0.000E0
+2021-04-06 15:30:41,847 INFO  OrbiproTesterLauncher,890 - Quaternion angle difference Actual - Reference (deg): 0.000E0%
+2021-04-06 15:30:41,847 INFO  OrbiproTesterLauncher,489 - Printing charts ...
+2021-04-06 15:30:42,310 INFO  OrbiproTesterLauncher,879 - Semi-Major axis (km): 7756.886
+2021-04-06 15:30:42,310 INFO  OrbiproTesterLauncher,890 - Semi-Major axis (km): 51.867%
+2021-04-06 15:30:42,733 INFO  OrbiproTesterLauncher,879 - Eccentricity: 0.787
+2021-04-06 15:30:42,733 INFO  OrbiproTesterLauncher,890 - Eccentricity: 99.984%
+2021-04-06 15:30:42,841 INFO  OrbiproTesterLauncher,879 - Inclination (deg): 2.449°
+2021-04-06 15:30:42,842 INFO  OrbiproTesterLauncher,890 - Inclination (deg): 2.422E0%
+2021-04-06 15:30:42,918 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node (deg): 2.128°
+2021-04-06 15:30:42,918 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node (deg): 8.022E-1%
+2021-04-06 15:30:42,988 INFO  OrbiproTesterLauncher,879 - Perigee Argument (deg): 13.524°
+2021-04-06 15:30:42,988 INFO  OrbiproTesterLauncher,890 - Perigee Argument (deg): 19.198%
+2021-04-06 15:30:43,052 INFO  OrbiproTesterLauncher,879 - Mean Anomaly (deg): 179.971°
+2021-04-06 15:30:43,053 INFO  OrbiproTesterLauncher,890 - Mean Anomaly (deg): 77980.397%
+2021-04-06 15:30:43,147 INFO  OrbiproTesterLauncher,879 - Perigee Argument plus Mean Anomaly (deg): 179.904°
+2021-04-06 15:30:43,147 INFO  OrbiproTesterLauncher,890 - Perigee Argument plus Mean Anomaly (deg): 17078.687%
+2021-04-06 15:30:43,227 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument (deg): 13.645°
+2021-04-06 15:30:43,227 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument (deg): 4.088E0%
+2021-04-06 15:30:43,276 INFO  OrbiproTesterLauncher,879 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 179.930°
+2021-04-06 15:30:43,277 INFO  OrbiproTesterLauncher,890 - Right Ascension of Ascending Node plus Perigee Argument plus Mean Anomaly (deg): 54692.492%
+2021-04-06 15:30:43,349 INFO  OrbiproTesterLauncher,879 - Ey/h component of eccentricity vector: 0.349
+2021-04-06 15:30:43,350 INFO  OrbiproTesterLauncher,890 - Ey/h component of eccentricity vector: 99.977%
+2021-04-06 15:30:43,406 INFO  OrbiproTesterLauncher,879 - Ex/k component of eccentricity vector: 0.706
+2021-04-06 15:30:43,406 INFO  OrbiproTesterLauncher,890 - Ex/k component of eccentricity vector: 99.986%
+2021-04-06 15:30:43,451 INFO  OrbiproTesterLauncher,879 - Hy/p component of inclination vector: 0.056
+2021-04-06 15:30:43,451 INFO  OrbiproTesterLauncher,890 - Hy/p component of inclination vector: 4.605E0%
+2021-04-06 15:30:43,496 INFO  OrbiproTesterLauncher,879 - Hx/q component of inclination vector: 0.039
+2021-04-06 15:30:43,496 INFO  OrbiproTesterLauncher,890 - Hx/q component of inclination vector: 38.985%
+2021-04-06 15:30:43,541 INFO  OrbiproTesterLauncher,879 - Mean Longitude Argument (deg): 179.930°
+2021-04-06 15:30:43,541 INFO  OrbiproTesterLauncher,890 - Mean Longitude Argument (deg): 54692.492%
+2021-04-06 15:30:43,618 INFO  OrbiproTesterLauncher,879 - Position vector size(km): 19150.800
+2021-04-06 15:30:43,619 INFO  OrbiproTesterLauncher,890 - Position vector size(km): 120.687%
+2021-04-06 15:30:43,670 INFO  OrbiproTesterLauncher,879 - Position vector x(km): 6597.967
+2021-04-06 15:30:43,671 INFO  OrbiproTesterLauncher,890 - Position vector x(km): 83619.947%
+2021-04-06 15:30:43,736 INFO  OrbiproTesterLauncher,879 - Position vector y(km): 20928.593
+2021-04-06 15:30:43,736 INFO  OrbiproTesterLauncher,890 - Position vector y(km): 42203.286%
+2021-04-06 15:30:43,803 INFO  OrbiproTesterLauncher,879 - Position vector z(km): 30218.159
+2021-04-06 15:30:43,804 INFO  OrbiproTesterLauncher,890 - Position vector z(km): 4091.535%
+2021-04-06 15:30:43,862 INFO  OrbiproTesterLauncher,879 - Velocity vector size(Km/s): 7.308
+2021-04-06 15:30:43,862 INFO  OrbiproTesterLauncher,890 - Velocity vector size(Km/s): 309.384%
+2021-04-06 15:30:43,915 INFO  OrbiproTesterLauncher,879 - Velocity vector x(Km/s): 3.233
+2021-04-06 15:30:43,915 INFO  OrbiproTesterLauncher,890 - Velocity vector x(Km/s): 128721.899%
+2021-04-06 15:30:43,982 INFO  OrbiproTesterLauncher,879 - Velocity vector y(Km/s): 19.425
+2021-04-06 15:30:43,982 INFO  OrbiproTesterLauncher,890 - Velocity vector y(Km/s): 70649.753%
+2021-04-06 15:30:44,044 INFO  OrbiproTesterLauncher,879 - Velocity vector z(Km/s): 17.528
+2021-04-06 15:30:44,044 INFO  OrbiproTesterLauncher,890 - Velocity vector z(Km/s): 203365.740%
+2021-04-06 15:30:44,115 INFO  OrbiproTesterLauncher,879 - Scalar coordinate of the quaternion: 0.000E0
+2021-04-06 15:30:44,115 INFO  OrbiproTesterLauncher,890 - Scalar coordinate of the quaternion: 0.000E0%
+2021-04-06 15:30:44,154 INFO  OrbiproTesterLauncher,879 - First coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:30:44,154 INFO  OrbiproTesterLauncher,890 - First coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:30:44,194 INFO  OrbiproTesterLauncher,879 - Second coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:30:44,194 INFO  OrbiproTesterLauncher,890 - Second coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:30:44,233 INFO  OrbiproTesterLauncher,879 - Third coordinate of the vectorial part of the quaternion: 0.000E0
+2021-04-06 15:30:44,233 INFO  OrbiproTesterLauncher,890 - Third coordinate of the vectorial part of the quaternion: 0.000E0%
+2021-04-06 15:30:44,288 INFO  OrbiproTesterLauncher,879 - Rotation angle: 0.000E0°
+2021-04-06 15:30:44,288 INFO  OrbiproTesterLauncher,890 - Rotation angle: 0.000E0%
+2021-04-06 15:30:44,326 INFO  OrbiproTesterLauncher,879 - Roll angle: 0.000E0°
+2021-04-06 15:30:44,326 INFO  OrbiproTesterLauncher,890 - Roll angle: 0.000E0%
+2021-04-06 15:30:44,364 INFO  OrbiproTesterLauncher,879 - Pitch angle: 0.000E0°
+2021-04-06 15:30:44,364 INFO  OrbiproTesterLauncher,890 - Pitch angle: 0.000E0%
+2021-04-06 15:30:44,406 INFO  OrbiproTesterLauncher,879 - Yaw angle: 0.000E0°
+2021-04-06 15:30:44,407 INFO  OrbiproTesterLauncher,890 - Yaw angle: 0.000E0%
+2021-04-06 15:30:44,448 INFO  OrbiproTesterLauncher,879 - Rotation Rate X (rad/s): 0.000E0
+2021-04-06 15:30:44,448 INFO  OrbiproTesterLauncher,890 - Rotation Rate X (rad/s): 0.000E0%
+2021-04-06 15:30:44,488 INFO  OrbiproTesterLauncher,879 - Rotation Rate Y (rad/s): 0.000E0
+2021-04-06 15:30:44,488 INFO  OrbiproTesterLauncher,890 - Rotation Rate Y (rad/s): 0.000E0%
+2021-04-06 15:30:44,527 INFO  OrbiproTesterLauncher,879 - Rotation Rate Z (rad/s): 0.000E0
+2021-04-06 15:30:44,527 INFO  OrbiproTesterLauncher,890 - Rotation Rate Z (rad/s): 0.000E0%
+2021-04-06 15:30:44,566 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration X (rad/s^2): 0.000E0
+2021-04-06 15:30:44,567 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration X (rad/s^2): 0.000E0%
+2021-04-06 15:30:44,609 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Y (rad/s^2): 0.000E0
+2021-04-06 15:30:44,609 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Y (rad/s^2): 0.000E0%
+2021-04-06 15:30:44,648 INFO  OrbiproTesterLauncher,879 - Rotation Acceleration Z (rad/s^2): 0.000E0
+2021-04-06 15:30:44,648 INFO  OrbiproTesterLauncher,890 - Rotation Acceleration Z (rad/s^2): 0.000E0%
+2021-04-06 15:30:44,707 INFO  OrbiproTesterLauncher,879 - Local Time of Ascending Node (hours): 0.142
+2021-04-06 15:30:44,707 INFO  OrbiproTesterLauncher,890 - Local Time of Ascending Node (hours): 6.768E-1%
+2021-04-06 15:30:44,750 INFO  OrbiproTesterLauncher,879 - Perigee Altitude (km): 4018.557
+2021-04-06 15:30:44,750 INFO  OrbiproTesterLauncher,890 - Perigee Altitude (km): 61218.685%
+2021-04-06 15:30:44,790 INFO  OrbiproTesterLauncher,879 - Apogee Altitude (km): 19520.344
+2021-04-06 15:30:44,790 INFO  OrbiproTesterLauncher,890 - Apogee Altitude (km): 95.963%
+2021-04-06 15:30:44,924 INFO  OrbiproTesterLauncher,492 - Charts printed!
+2021-04-06 15:30:44,924 INFO  OrbiproTesterLauncher,225 - Finished test for input file TC_WP3_005.in
+2021-04-06 15:30:44,924 INFO  OrbiproTesterLauncher,235 - All tests finished!

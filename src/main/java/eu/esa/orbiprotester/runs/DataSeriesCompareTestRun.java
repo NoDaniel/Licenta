@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package eu.esa.orbiprotester.runs;
 
 import java.io.File;
@@ -16,7 +14,7 @@ import eu.esa.orbiprotester.utils.Messages;
 
 /** Compare two or more data series read from external files.
  * 
- * @author lucian
+ * @author Bouleanu Daniel
  *
  */
 public class DataSeriesCompareTestRun extends AbstractTestRun {

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package eu.esa.orbiprotester.utils;
 
 import java.util.ArrayList;

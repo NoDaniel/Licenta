@@ -284,24 +284,24 @@ public class InfraredContribution extends AbstractRadiationForceModel {
         final Vector3D     position     = spaceCraft.getPVCoordinates().getPosition();
 		Vector3D flux = Vector3D.ZERO;
 		
-		for(Integer i = 0; i < this.sy; i++)
+		for(int i = 1; i <= this.sy; i++)
 		{
-			for(Integer j = 0; j < this.sx; j++)
+			for(int j = 1; j <= this.sx; j++)
 			{
 				double emiss;
-				double phi = indexRowToRad(i, sy, sx);
-				double theta = indexColumnToRad(j, sy, sx);
+				//[phi, theta]
+				double[] angles = indexToRadian(i, j, this.sy, this.sx);
 				
 				double R = this.bodyShape.getEquatorialRadius();
-				Vector3D gridCartesianPoint = new Vector3D(R * Math.cos(phi) * Math.cos(theta),
-														   R * Math.cos(phi) * Math.sin(theta),
-														   R * Math.sin(phi));
+				Vector3D gridCartesianPoint = new Vector3D(R * Math.cos(angles[0]) * Math.cos(angles[1]),
+														   R * Math.cos(angles[0]) * Math.sin(angles[1]),
+														   R * Math.sin(angles[0]));
 				double satGridAngle = Vector3D.angle(gridCartesianPoint, position);
 				if( Math.cos(satGridAngle) >= 0)
 				{
 					if(this.radiationType == org.orekit.forces.radiation.RadiationType.EARTH)
 					{
-						emiss = this.computeEmissivity(date, phi);
+						emiss = this.computeEmissivity(date, angles[0]);
 					}
 					else
 					{
@@ -312,9 +312,9 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 					//double satGridDistance = Vector3D.distanceSq(position, gridCartesianPoint);
 					double Eincident = this.solarPressure * gridArea;
 					
-					flux = flux.add(emiss / (4 * Math.PI * Math.pow(satGridDistance, 2))*
-										  (Eincident * Math.cos(satGridAngle)) *
-										  position.subtract(gridCartesianPoint).getNorm(), new Vector3D(1, 1, 1));
+					//Vector3D positionAux = position;
+					flux = flux.add( emiss / (4 * Math.PI * Math.pow(satGridDistance, 2))*(
+										  Eincident * Math.cos(satGridAngle)), position.subtract(gridCartesianPoint).normalize());
 					
 				}
 			}
@@ -348,34 +348,17 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 	 * Added as private functions for performance only
 	 */
 	
-	/**
-	 * Converts row of matrix values(i,j) to coordinate phi.
-	 * @param i
-	 * @param sy
-	 * @param sx
-	 * @return
-	 */
-	private double indexRowToRad(int i, double sy, double sx)
+	private double[] indexToRadian(int i, int j, double sy, double sx)
 	{
+		double[] retVect = new double[2];
 		double ux = 2 * Math.PI / sx;
 		double uy = Math.PI / sy;
 		
-		return (-1)*Math.PI / 2 + (i - 0.5) * uy; 
-	}
-	
-	/**
-	 * Converts row of matrix values(i,j) to coordinate theta.
-	 * @param j
-	 * @param sy
-	 * @param sx
-	 * @return
-	 */
-	private double indexColumnToRad(int j, double sy, double sx)
-	{
-		double ux = 2 * Math.PI / sx;
-		double uy = Math.PI / sy;
+		retVect[0] = (-1) * (Math.PI / 2) + (i - 0.5) * uy;
+		retVect[1] = Math.PI - (j - 0.5) * ux;
 		
-		return Math.PI - (j-0.5) * ux;
+		return retVect;
+		
 	}
 	
 	/**
@@ -403,7 +386,7 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 		/**
 		 * Compute the earth albedo for the given latitude and date
 		 */
-		return e0 + e1 * Math.sin(phi) + e2 * (1/2) * (3 * Math.pow(Math.sin(phi), 2) - 1);
+		return e0 + e1 * Math.sin(phi) + e2 * 1 / 2 * (3 * Math.pow(Math.sin(phi), 2) - 1);
 	}
 	
 	/**
@@ -416,7 +399,7 @@ public class InfraredContribution extends AbstractRadiationForceModel {
 	 */
 	private double computeArea(double radius, int i, double sy, double sx)
 	{
-		return (4 * Math.PI * Math.pow(radius, 2))/ sx * Math.sin((Math.PI/2)/sy) * Math.sin(((i - 0.5) * Math.PI) / sx);
+		return (4 * Math.PI * Math.pow(radius, 2))/ sx * Math.sin(Math.PI/2/sy) * Math.sin(((i - 0.5) * Math.PI) / sx);
 	}
 
    

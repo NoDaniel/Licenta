@@ -9,21 +9,21 @@ timescale = UTC
 
 ### Orbit definition
 ## date of the orbital parameters (UTC)
-orbit.date = 2013-07-24T04:35:36.348
+orbit.date = 2013-07-23T03:03:05.970
 
 ### Keplerian elements
 ## Semi-major axis (km)
-orbit.keplerian.a = 6900.0
+orbit.keplerian.a = 7198.4832626 
 ## Eccentricity
-orbit.keplerian.e = 0.00222270824
+orbit.keplerian.e = 0.00012750114
 ## Inclination (degrees)
-orbit.keplerian.i = 1.86438067644
+orbit.keplerian.i = 98.6894245
 ## Right Ascension of Ascending Node (degrees)
-orbit.keplerian.raan = 281.661404104
+orbit.keplerian.raan = 263.17707959
 ## Perigee Argument (degrees)
-orbit.keplerian.pa = 230.123714157
+orbit.keplerian.pa = 56.9237741458
 ## Anomaly (degrees)
-orbit.keplerian.anomaly = 1.195159217
+orbit.keplerian.anomaly = 303.21338071
 
 ### Angle type for anomaly, alpha or lambda (ECCENTRIC/MEAN/TRUE) [MEAN]
 orbit.angle.type = MEAN
@@ -41,9 +41,9 @@ integrator.max.step = 10.0
 
 ### Simulation parameters
 ## Start date (UTC) [orbit.date]
-start.date  = 2013-07-24T04:35:36.348
+start.date  = 2013-07-23T03:03:05.970
 ## Duration (days)
-duration.in.days = 7
+duration.in.days = 10
 
 ## Time step between printed elements (seconds)
 output.step = 600.0
@@ -59,6 +59,16 @@ orbipro.reference.file = TC_WP3_005_Orekit.out
 
 ## Infrared contribution
 infrared.radiation = true
+infrared.surface = 15.0
+infrared.kr = 0.2
+
+spacecraft.length.x = 2
+spacecraft.length.y = 2
+spacecraft.length.z = 2
+solar.array.area = 20
+spacecraft.absorption.coeff = 0.6
+spacecraft.reflection.coeff = 0.2
+drag.cd = 2
 
 
 

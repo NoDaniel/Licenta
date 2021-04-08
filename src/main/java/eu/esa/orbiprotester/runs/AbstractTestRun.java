@@ -1,19 +1,4 @@
-/* Copyright 2002-2013 CS Systèmes d'Information
- * Licensed to CS Systèmes d'Information (CS) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * CS licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package eu.esa.orbiprotester.runs;
 
 import java.io.BufferedReader;
@@ -81,6 +66,7 @@ import org.orekit.forces.maneuvers.ConstantThrustManeuver;
 import org.orekit.forces.maneuvers.ImpulseManeuver;
 import org.orekit.forces.radiation.AbstractRadiationForceModel;
 import org.orekit.forces.radiation.InfraredContribution;
+import org.orekit.forces.radiation.IsotropicRadiationClassicalConvention;
 import org.orekit.forces.radiation.IsotropicRadiationSingleCoefficient;
 import org.orekit.forces.radiation.RadiationSensitive;
 import org.orekit.forces.radiation.RadiationType;
@@ -122,7 +108,7 @@ import org.orekit.utils.PVCoordinates;
 import org.orekit.utils.TimeStampedAngularCoordinates;
 import org.orekit.utils.TimeStampedPVCoordinates;
 
-import eu.esa.orbiprotester.OrbiproTesterLauncher;
+import eu.esa.orbiprotester.TesterLauncher;
 import eu.esa.orbiprotester.orekitCustom.JB2008;
 import eu.esa.orbiprotester.orekitCustom.SolarIndicesJB2008;
 import eu.esa.orbiprotester.utils.ChartDataHolder;
@@ -131,7 +117,7 @@ import eu.esa.orbiprotester.utils.Messages;
 
 /** Abstract implementation for a test.
  *
- * @author Lucian Barbulescu
+ * @author Bouleanu Daniel
  */
 public abstract class AbstractTestRun implements TestRun {
 
@@ -909,13 +895,27 @@ public abstract class AbstractTestRun implements TestRun {
         	final OneAxisEllipsoid earth  = new OneAxisEllipsoid(Constants.WGS84_EARTH_EQUATORIAL_RADIUS, 
 											                     Constants.WGS84_EARTH_FLATTENING, 
 											                     centralBodyShape.getBodyFrame());
-			final double kR 			  = 1;
-			final double surface 		  = 10.0;
+			final double kR 			  = parser.getDouble(ParameterKey.INFRARED_KR);
+			final double surface 		  = parser.getDouble(ParameterKey.INFRARED_SURFACE);
 			final RadiationSensitive sscs = new IsotropicRadiationSingleCoefficient(surface, kR);
 			CelestialBody sun             = CelestialBodyFactory.getSun();
 
+			
+			double xLength 		       = parser.getDouble(ParameterKey.SPACECRAFT_LENGTH_X);
+			double yLength 		       = parser.getDouble(ParameterKey.SPACECRAFT_LENGTH_Y);
+			double zLength 		       = parser.getDouble(ParameterKey.SPACECRAFT_LENGTH_Z);
+			double solarArrayArea      = parser.getDouble(ParameterKey.SOLAR_ARRAY_AREA);
+			double absorptionCoeff     = parser.getDouble(ParameterKey.SPACECRAFT_ABSORPTION_COEFF);
+			double reflectionCoeff     = parser.getDouble(ParameterKey.SPACECRAFT_REFLECTION_COEFF); 
+			double dragCoeff           = parser.getDouble(ParameterKey.DRAG_CD);
+			
+			this.spacecraft              = new BoxAndSolarArraySpacecraft(xLength, yLength, zLength, 
+			                                    sun, solarArrayArea, Vector3D.PLUS_J, dragCoeff, 
+												  absorptionCoeff, reflectionCoeff);
+			
+			
         	AbstractRadiationForceModel infraredRadiation = new InfraredContribution(RadiationType.EARTH,
-        																			 earth, sscs,
+        																			 earth, this.spacecraft,
         																			 sun);
         	
         	
@@ -932,96 +932,7 @@ public abstract class AbstractTestRun implements TestRun {
      * @param step the time interval for which the maneuver can be considered constant 
      * @throws IOException if the maneuver file cannot be accessed 
      */
-    private void parseManeuverFile(final File maneuverFile, final NumericalPropagator numProp, final double isp, final double step) throws IOException {
-        // define the regular epressions
-        final Pattern dateRegexp     = Pattern.compile("^((?:-?\\p{Digit}{4})-?(?:\\p{Digit}{2})-?(?:\\p{Digit}{2})T(?:\\p{Digit}{2}):?(?:\\p{Digit}{2}):?(?:\\p{Digit}{2}(?:[.,]\\p{Digit}+)?)?(?:Z|[-+]00(?::00)?)?)$");
-        final Pattern sampleRegexp   = Pattern.compile("^((?:-?\\p{Digit}{4})-?(?:\\p{Digit}{2})-?(?:\\p{Digit}{2})T(?:\\p{Digit}{2}):?(?:\\p{Digit}{2}):?(?:\\p{Digit}{2}(?:[.,]\\p{Digit}+)?)?(?:Z|[-+]00(?::00)?)?)\\p{Space}+(\\p{Digit}+(?:\\.\\p{Digit}+)?)\\p{Space}+\\[(\\p{Digit}+(?:\\.\\p{Digit}+)?)\\p{Space}+(\\p{Digit}+(?:\\.\\p{Digit}+)?)\\p{Space}+(\\p{Digit}+(?:\\.\\p{Digit}+)?)\\]$");
-        
-        AbsoluteDate sDate = null;
-        AbsoluteDate eDate = null;
-        
-        final LinearInterpolator linearInterpolator = new LinearInterpolator();
-        
-        List<Double> times = new LinkedList<>();
-        List<Double> thrust = new LinkedList<>();
-        List<Double> directionX = new LinkedList<>();
-        List<Double> directionY = new LinkedList<>();
-        List<Double> directionZ = new LinkedList<>();
-        
-        try(final BufferedReader manReader = new BufferedReader(new FileReader(maneuverFile))) {
-            String line = null;
-            while ((line = manReader.readLine()) != null) {
-                line = line.trim();
-                // ignore empty lines and comments
-                if (line.isEmpty() || line.startsWith("#")) {
-                    continue;
-                }
-              
-                final Matcher dateMatcher = dateRegexp.matcher(line);
-                if (dateMatcher.matches()) {
-                    // this is either startDate or endDate
-                    if (sDate == null) {
-                        sDate = new AbsoluteDate(dateMatcher.group(1), ts);
-                    } else if (eDate == null) {
-                        eDate = new AbsoluteDate(dateMatcher.group(1), ts);
-                        // switch dates if in incorrect order
-                        if (eDate.durationFrom(sDate) < 0) {
-                            AbsoluteDate tDate = sDate;
-                            sDate = eDate;
-                            eDate = tDate;
-                        }
-                    } else {
-                        throw new IOException(Messages.ERR_DATE_LINES);
-                    }
-                } else {
-                    final Matcher sampleMatcher = sampleRegexp.matcher(line);
-                    if (sampleMatcher.matches()) {
-                        // validate dates
-                        if (sDate == null || eDate == null) {
-                            throw new IOException(Messages.ERR_DATE_LINES);
-                        }
-                        final AbsoluteDate dt = new AbsoluteDate(sampleMatcher.group(1), ts);
-                        
-                        times.add(dt.durationFrom(sDate));
-                        thrust.add(Double.parseDouble(sampleMatcher.group(2)));
-                        directionX.add(Double.parseDouble(sampleMatcher.group(3)));
-                        directionY.add(Double.parseDouble(sampleMatcher.group(4)));
-                        directionZ.add(Double.parseDouble(sampleMatcher.group(5)));
-                    }
-                }
-            }
-        }
-        
-        // create a Continuous maneuver for each step interval 
-        AbsoluteDate manDate = sDate;
-        
-        PolynomialSplineFunction thrustFunction = linearInterpolator.interpolate(times.stream().mapToDouble(d -> d).toArray(), thrust.stream().mapToDouble(d -> d).toArray());
-        PolynomialSplineFunction directionXFunction = linearInterpolator.interpolate(times.stream().mapToDouble(d -> d).toArray(), directionX.stream().mapToDouble(d -> d).toArray());
-        PolynomialSplineFunction directionYFunction = linearInterpolator.interpolate(times.stream().mapToDouble(d -> d).toArray(), directionY.stream().mapToDouble(d -> d).toArray());
-        PolynomialSplineFunction directionZFunction = linearInterpolator.interpolate(times.stream().mapToDouble(d -> d).toArray(), directionZ.stream().mapToDouble(d -> d).toArray());
-        
-        while (eDate.durationFrom(manDate) >= step) {
-            final double thrustData = thrustFunction.value(manDate.durationFrom(sDate));
-            final double dirXData = directionXFunction.value(manDate.durationFrom(sDate));
-            final double dirYData = directionYFunction.value(manDate.durationFrom(sDate));
-            final double dirZData = directionZFunction.value(manDate.durationFrom(sDate));
-            final ConstantThrustManeuver maneuver = new ConstantThrustManeuver(manDate, step, thrustData, isp, new Vector3D(dirXData, dirYData, dirZData));
-            //System.out.println(manDate.durationFrom(sDate) + "," + thrustData + ", " + dirXData + ", " + dirYData + ", " + dirZData);
-            numProp.addForceModel(maneuver);
-            manDate = manDate.shiftedBy(step);
-        }
-        
-        if (eDate.durationFrom(manDate) != 0) {
-            final double thrustData = thrustFunction.value(manDate.durationFrom(sDate));
-            final double dirXData = directionXFunction.value(manDate.durationFrom(sDate));
-            final double dirYData = directionYFunction.value(manDate.durationFrom(sDate));
-            final double dirZData = directionZFunction.value(manDate.durationFrom(sDate));
-            final ConstantThrustManeuver maneuver = new ConstantThrustManeuver(manDate, step, thrustData, isp, new Vector3D(dirXData, dirYData, dirZData));
-            //System.out.println(manDate.durationFrom(sDate) + "," + thrustData + ", " + dirXData + ", " + dirYData + ", " + dirZData);
-            numProp.addForceModel(maneuver);
-        }
-    }
-
+    
     /** Parse a file containing a list of attitude values. 
      * @param attitudeFile the file containing the attitude data
      * @returns a list of attitudes
@@ -1626,9 +1537,9 @@ public abstract class AbstractTestRun implements TestRun {
 
             // try to find the resource alongside with the application jar
             // (useful for production)
-            final String className = "/" + OrbiproTesterLauncher.class.getName().replaceAll("\\.", "/") + ".class";
+            final String className = "/" + TesterLauncher.class.getName().replaceAll("\\.", "/") + ".class";
             final Pattern pattern = Pattern.compile("jar:file:([^!]+)!" + className + "$");
-            final Matcher matcher = pattern.matcher(OrbiproTesterLauncher.class
+            final Matcher matcher = pattern.matcher(TesterLauncher.class
                     .getResource(className).toURI().toString());
             if (matcher.matches()) {
                 final File resourceFile = new File(new File(matcher.group(1)).getParentFile(), name);
@@ -1639,7 +1550,7 @@ public abstract class AbstractTestRun implements TestRun {
 
             // try to find the resource in the classpath (useful for development
             // in an IDE)
-            final URL resourceURL = OrbiproTesterLauncher.class.getResource(name);
+            final URL resourceURL = TesterLauncher.class.getResource(name);
             if (resourceURL != null) {
                 return new File(resourceURL.toURI().getPath());
             }
